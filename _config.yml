@@ -51,7 +51,10 @@ defaults:
   home:
     heading: "Blog"
     subheading: "Yet another blog with some interesting topics"
-    banner: "https://i.imgur.com/kXM9pFM.jpeg"
+    banner: "https://i.imgur.com/sZul6vN.jpeg"
+
+header_pages:
+  - about.markdown
 
 plugins:
   - jekyll-feed
