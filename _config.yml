@@ -30,13 +30,9 @@ twitter_username: jekyllrb
 github_username: jekyll
 
 # Build settings
-# theme: minima
-# remote_theme: jekyll/minima
-# minima:
-#   skin: dark
-remote_theme: bitbrain/jekyll-dash
-paginate: 10
-paginate_path: "/blog/page:num/"
+theme: minima
+minima:
+  skin: dark
 plugins:
   - jekyll-feed
 # Exclude from processing.
