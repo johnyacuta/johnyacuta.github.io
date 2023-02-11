@@ -50,8 +50,8 @@ brand_color: "#3d85c6"
 defaults:
   home:
     heading: "Blog"
-    subheading: "Yet another blog you could read."
-    banner: "https://images.wallpapersden.com/image/download/abstract-lines-8k-multi-colorful_bWhqamyUmZqaraWkpJRsa21lrWloZ2U.jpg"
+    subheading: "Yet another blog with some interesting topics"
+    banner: "https://i.imgur.com/kXM9pFM.jpeg"
 
 plugins:
   - jekyll-feed
