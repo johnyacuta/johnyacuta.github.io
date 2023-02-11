@@ -34,7 +34,7 @@ github_username: jekyll
 # remote_theme: jekyll/minima
 # minima:
 #   skin: dark
-theme: jekyll-dash
+remote_theme: bitbrain/jekyll-dash
 plugins:
   - jekyll-feed
 # Exclude from processing.
