@@ -35,6 +35,8 @@ github_username: jekyll
 # minima:
 #   skin: dark
 remote_theme: bitbrain/jekyll-dash
+paginate: 10
+paginate_path: "/blog/page:num/"
 plugins:
   - jekyll-feed
 # Exclude from processing.
