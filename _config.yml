@@ -54,7 +54,7 @@ defaults:
     banner: "https://i.imgur.com/sZul6vN.jpeg"
 
 header_pages:
-  - about.markdown
+  - about.html
 
 plugins:
   - jekyll-feed
