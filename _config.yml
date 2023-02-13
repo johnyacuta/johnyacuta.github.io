@@ -49,7 +49,7 @@ brand_color: "#3d85c6"
 # Page default value
 defaults:
   home:
-    heading: "Blog"
+    heading: "John Yacuta's Blog"
     subheading: "Yet another blog with some interesting topics"
     banner: "https://i.imgur.com/sZul6vN.jpeg"
 
