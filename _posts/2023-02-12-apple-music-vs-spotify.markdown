@@ -24,7 +24,7 @@ Spotify's ability to let users follow artists and receive status updates on new 
 
 This was the nail in the coffin and I did not know this was a thing until it happened, so I will save you the hassle because this still upsets me to this day. I had curated playlists in Apple Music while I was enjoying the free trial and used them many times. However, for the reasons I mentioned above I decided not to renew my Apple Music subscription and use Spotify instead. Also, I had not saved my Apple Music playlists outside of Apple Music because I would surely be able to view my music and not be able to play them like Spotify does right? I can surely review them later after my subscription ends, so I can put them on Spotify (they didn't know that, duh). What UX would (1) not allow you to access your music after your subscription ends and (2) deletes your music completely on top of that after your subscription ends? Well, [Apple Music does][apple-music-delete-fun-time]. That is a feature it does have! For this reason alone, I don't see myself coming back to Apple Music anytime soon.
 
-## Closing Thoughts
+## Conclusion
 
 It is amazing to me that Apple, who has been in the music sector longer than Spotify, has more lacking features in their subscription than Spotify's free tier model. Even though [Apple has more music in their library than Spotify's][apple-music-100-million-songs] it is clear that UX goes a long way to capture the interests of users. This includes myself. Keep going Spotify! You are doing an amazing job in the music technology business.
 
