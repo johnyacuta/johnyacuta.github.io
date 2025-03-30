@@ -15,7 +15,7 @@ class NavBar extends Component {
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/cv">CV</Nav.Link>
-              <Nav.Link as={Link} to="/teaching">Teaching</Nav.Link>
+              <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
               <Nav.Link as={Link} to="/about-me">About Me</Nav.Link>
             </Nav>
           </Navbar.Collapse>
