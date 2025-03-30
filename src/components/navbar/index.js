@@ -10,7 +10,7 @@ class NavBar extends Component {
     return(
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand>Laurel Yacuta</Navbar.Brand>
+          <Navbar.Brand>John Yacuta</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -25,15 +25,7 @@ class NavBar extends Component {
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
-            <Button variant="dark" href="mailto:lyacuta@ucdavis.edu">
-              <img
-                src="./envelope-solid.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="Email"/>
-            </Button>
-            <Button variant="dark" href="https://www.linkedin.com/in/laurel-yacuta-890527129?trk=people-guest_people_search-card">
+            <Button variant="dark" href="https://www.linkedin.com/in/john.yacuta/">
               <img
                 src="./linkedin-brands.svg"
                 width="30"
@@ -41,7 +33,7 @@ class NavBar extends Component {
                 className="d-inline-block align-top"
                 alt="LinkedIn"/>
             </Button>
-            <Button variant="dark" href="https://github.com/laurelyacuta">
+            <Button variant="dark" href="https://github.com/johnyacuta">
               <img
                 src="./github-brands.svg"
                 width="30"
