@@ -15,12 +15,12 @@ class AboutMe extends Component {
         </Row>
         <Row>
           <Col>
-            <Image src="/laurel-about-me.jpg" rounded style={{marginTop: 50, marginBottom: 50, width: '25rem'}}></Image>
+            <Image src="/john-about-me.jpg" rounded style={{marginTop: 50, marginBottom: 50, width: '25rem'}}></Image>
           </Col>
           <Col style={{marginTop: 50, marginBottom: 50, width: '25rem'}}>
             <p class="text-left">
-              I am originally from the beautiful foothills of the Sierra Nevada in California. I received my undergraduate degree in
-              International Relations from University of California Davis. And when not hitting the books, I am an avid gardener, artist, and tennis player!
+              I am originally from the San Fernando Valley north of Los Angeles in California. I received my undergraduate degree in
+              Computer Science from the University of California, Davis. And when not hands on keybpoard, I am an avid woodworker, gamer, and reader!
             </p>
           </Col>
         </Row>

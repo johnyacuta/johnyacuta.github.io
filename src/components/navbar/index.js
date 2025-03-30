@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 class NavBar extends Component {
   render() {
@@ -16,10 +15,6 @@ class NavBar extends Component {
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/cv">CV</Nav.Link>
-              <NavDropdown title="Research" menuVariant="dark">
-                <NavDropdown.Item as={Link} to="/publications">Publications</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/research-applied">Research Applied</NavDropdown.Item>
-              </NavDropdown>
               <Nav.Link as={Link} to="/teaching">Teaching</Nav.Link>
               <Nav.Link as={Link} to="/about-me">About Me</Nav.Link>
             </Nav>
