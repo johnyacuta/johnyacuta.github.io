@@ -20,7 +20,7 @@ class NavBar extends Component {
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
-            <Button variant="dark" href="https://www.linkedin.com/in/john.yacuta/">
+            <Button variant="dark" href="https://www.linkedin.com/in/johnyacuta/">
               <img
                 src="./linkedin-brands.svg"
                 width="30"
