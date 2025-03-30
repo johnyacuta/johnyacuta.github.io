@@ -15,7 +15,7 @@ class AboutMe extends Component {
         </Row>
         <Row>
           <Col>
-            <Image src="/john-about-me.jpg" rounded style={{marginTop: 50, marginBottom: 50, width: '25rem'}}></Image>
+            <Image src="/john-about-me.JPG" rounded style={{marginTop: 50, marginBottom: 50, width: '25rem'}}></Image>
           </Col>
           <Col style={{marginTop: 50, marginBottom: 50, width: '25rem'}}>
             <p class="text-left">
