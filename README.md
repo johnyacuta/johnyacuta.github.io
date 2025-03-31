@@ -33,6 +33,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+The project will build and deploy the app from the source branch: `main` and generate a build folder to push it to the destination branch: `gh-pages` which will contain static files to host the website. This is what GitHub Pages uses in order to serve the website.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
