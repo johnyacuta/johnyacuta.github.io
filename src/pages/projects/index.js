@@ -17,7 +17,7 @@ class Projects extends Component {
             I have found that one of the most rewarding aspects of my career has been solving complex problems and sharing that knowledge with others.
           </p>
           <p>
-            Below are various projects that I have worked on.
+            Below are the various projects that I have worked on.
           </p>
           <h3>Personal Projects</h3>
           <ul>
@@ -51,6 +51,38 @@ class Projects extends Component {
                 The web application leverages a public API for data retrieval.
                 Built with React.
               </li>
+            </ul>
+          </ul>
+          <h3>Work Projects</h3>
+          <ul>
+            <li>2025</li>
+            <ul>
+              <li>Deploy the product application to a new region</li>
+              <ul>
+                <li>
+                  I developed infrastructure as code to deploy a product application to a new region as a proof of concept, ensuring compliance with local regulations and data privacy laws.
+                  Built with Kubernetes, Crossplane, and AWS CDK.
+                </li>
+              </ul>
+              <li>Cloud cost savings initiative</li>
+              <ul>
+                <li>
+                  I led a cloud cost savings initiative in both AWS and Azure that resulted in a 30% reduction in cloud spending by optimizing resource usage and implementing cost-saving measures such as rightsizing, Savings Plans, and Reserved Instances.
+                </li>
+              </ul>
+            </ul>
+            <li>2024</li>
+            <ul>
+              <li>AI Assistant</li>
+              <ul>
+                <li>
+                  I delivered an AI assistant project through to production that leverages the power of custom models to assist with grantmaking tasks.
+                  The goal is to create a tool that can help users automate repetitive tasks and improve productivity.
+                  I led the development efforts and collaborated with a team of engineers and product to build the application.
+                  Built with Microsoft Azure OpenAI and Copilot Studio.
+                </li>
+              </ul>
+              <li>...</li>
             </ul>
           </ul>
         </div>
