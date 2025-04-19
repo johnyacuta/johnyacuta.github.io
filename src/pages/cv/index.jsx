@@ -13,17 +13,9 @@ class CV extends Component {
         </Row>
         <Row className="justify-content-md-center">
           <p>
-            2025 - TBD
+            Please contact me on LinkedIn to get in touch with me. I would love to connect and share more information about my qualifications.
           </p>
         </Row>
-        <Row className="justify-content-md-center">
-          <p>
-            Below is my CV, or you can contact me for more information.
-          </p>
-        </Row>
-        {/* <Row className="justify-content-md-center">
-          <iframe title="CV" src="" width={900} height={900}></iframe>
-        </Row> */}
       </Container>
     );
   }

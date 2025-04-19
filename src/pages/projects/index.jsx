@@ -55,7 +55,7 @@ class Projects extends Component {
           </ul>
           <h3>Work Projects</h3>
           <ul>
-            <li>2025</li>
+            <li>Submittable</li>
             <ul>
               <li>Deploy the product application to a new region</li>
               <ul>
@@ -71,7 +71,6 @@ class Projects extends Component {
                 </li>
               </ul>
             </ul>
-            <li>2024</li>
             <ul>
               <li>AI Assistant</li>
               <ul>
@@ -82,7 +81,7 @@ class Projects extends Component {
                   Built with Microsoft Azure OpenAI and Copilot Studio.
                 </li>
               </ul>
-              <li>...</li>
+              <li>More to come!</li>
             </ul>
           </ul>
         </div>
