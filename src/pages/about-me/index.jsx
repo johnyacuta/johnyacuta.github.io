@@ -1,5 +1,4 @@
 import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import AboutMeContent, { title } from './index.mdx';
@@ -10,15 +9,8 @@ function AboutMe() {
       <Row className="justify-content-md-center">
         <h1 style={{ marginTop: 50, marginBottom: 50, width: '25rem' }}>{title}</h1>
       </Row>
-      <Row>
-        <Col>
-          <Image
-            src="/john-about-me.JPG"
-            rounded
-            style={{ marginTop: 50, marginBottom: 50, width: '25rem' }}
-          />
-        </Col>
-        <Col style={{ marginTop: 50, marginBottom: 50, width: '25rem' }}>
+      <Row className="justify-content-md-center">
+        <Col md={8} style={{ marginTop: 50, marginBottom: 50 }}>
           <div className="text-left">
             <AboutMeContent />
           </div>

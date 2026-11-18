@@ -6,9 +6,9 @@ function Projects() {
   return (
     <Container>
       <Row className="justify-content-md-center">
-        <h1 style={{ marginTop: 50, marginBottom: 50, width: '25rem' }}>{title}</h1>
+        <h1 className="page-heading">{title}</h1>
       </Row>
-      <div className="text-left">
+      <div className="projects-content text-left">
         <ProjectsContent />
       </div>
     </Container>
