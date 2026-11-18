@@ -7,34 +7,34 @@ import Container from 'react-bootstrap/Container';
 class NavBar extends Component {
   render() {
     return(
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="dark" variant="dark" expand="lg" className="site-navbar">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+          <Navbar.Collapse id="basic-navbar-nav" className="site-navbar-collapse">
+            <Nav className="site-nav-links">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/cv">CV</Nav.Link>
               <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
               <Nav.Link as={Link} to="/about-me">About Me</Nav.Link>
             </Nav>
-          </Navbar.Collapse>
-          <Navbar.Collapse className="justify-content-end">
-            <Button variant="dark" href="https://www.linkedin.com/in/johnyacuta/">
-              <img
-                src="./linkedin-brands.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="LinkedIn"/>
-            </Button>
-            <Button variant="dark" href="https://github.com/johnyacuta">
-              <img
-                src="./github-brands.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="GitHub"/>
-            </Button>
+            <div className="site-social-links">
+              <Button variant="dark" href="https://www.linkedin.com/in/johnyacuta/">
+                <img
+                  src="./linkedin-brands.svg"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                  alt="LinkedIn"/>
+              </Button>
+              <Button variant="dark" href="https://github.com/johnyacuta">
+                <img
+                  src="./github-brands.svg"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                  alt="GitHub"/>
+              </Button>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

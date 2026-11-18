@@ -19,6 +19,38 @@
   margin: 0;
 }
 
+.site-navbar .container {
+  position: relative;
+}
+
+.site-navbar-collapse {
+  position: relative;
+}
+
+.site-nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.site-social-links {
+  display: flex;
+  margin-left: auto;
+}
+
+@media (max-width: 991.98px) {
+  .site-nav-links {
+    position: static;
+    transform: none;
+    align-items: center;
+  }
+
+  .site-social-links {
+    justify-content: center;
+    margin: 0;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
