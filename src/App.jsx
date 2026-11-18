@@ -1,7 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import NavBar from './components/navbar';
 import Home from './pages/home';
-import CV from './pages/cv';
 import Projects from './pages/projects';
 import AboutMe from "./pages/about-me";
 import Footer from "./components/footer";
@@ -18,13 +17,14 @@ function App() {
       />
       <HashRouter>
         <NavBar></NavBar>
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/home" element={<Home/>}/>
-          <Route exact path="/cv" element={<CV/>}/>
-          <Route exact path="/projects" element={<Projects/>}/>
-          <Route exact path="/about-me" element={<AboutMe/>}/>
-        </Routes>
+        <main className="app-content">
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/home" element={<Home/>}/>
+            <Route exact path="/projects" element={<Projects/>}/>
+            <Route exact path="/about-me" element={<AboutMe/>}/>
+          </Routes>
+        </main>
       </HashRouter>
       <Footer></Footer>
     </div>
