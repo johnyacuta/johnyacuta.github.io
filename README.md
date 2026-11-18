@@ -58,10 +58,6 @@ npm run serve
 
 ## Deployment
 
-Deploy to GitHub Pages:
+The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and deploys the site automatically whenever changes are pushed to `main` (including merged pull requests). It can also be started manually from the repository's **Actions** tab.
 
-```sh
-npm run deploy
-```
-
-The `predeploy` script builds the site first. The deploy script publishes the contents of `build/` to the `gh-pages` branch.
+For the first deployment, open the repository's **Settings → Pages** and set the build and deployment source to **GitHub Actions**.
