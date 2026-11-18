@@ -25,11 +25,75 @@ Explore these personal projects on [GitHub](https://github.com/johnyacuta).
 
 ### Work Projects
 
-- Submittable
-  - Deploy the product application to a new region
-    - Developed infrastructure as code to deploy a product application to a new region as a proof of concept, helping ensure compliance with local regulations and data privacy laws. Built with Kubernetes, Crossplane, and AWS CDK.
-  - Cloud cost savings initiative
-    - Led a cost optimization initiative across AWS and Azure that reduced cloud spending by 30%. Optimized resource usage and applied cost-saving measures such as rightsizing, Savings Plans, and Reserved Instances.
-- AI Assistant
-  - Delivered an AI assistant from development through production. It uses custom models to support grantmaking tasks and help automate repetitive work. I led development in collaboration with engineering and product teams. Built with Microsoft Azure OpenAI and Copilot Studio.
-- More to come!
+#### Submittable
+
+- **Product deployment to a new region:** Developed infrastructure as code for a proof-of-concept deployment, helping ensure compliance with local regulations and data privacy laws. Built with Kubernetes, Crossplane, and AWS CDK.
+- **Cloud cost savings:** Led an initiative across AWS and Azure that reduced cloud spending by 30% through resource optimization and measures such as rightsizing, Savings Plans, and Reserved Instances.
+
+#### AI Assistant
+
+Delivered an AI assistant from development through production. It uses custom models to support grantmaking tasks and help automate repetitive work. I led development in collaboration with engineering and product teams. Built with Microsoft Azure OpenAI and Copilot Studio.
+
+#### LexisNexis
+
+##### Key highlights
+
+- Modernized a legacy product architecture by founding and architecting three federated GraphQL APIs in TypeScript, replacing a 20-year-old Perl monolith and establishing the API foundation for a new product experience.
+- Led a zero-downtime initiative across 36 Kubernetes product services spanning three clusters by implementing readiness and liveness probes and graceful application termination using SIGTERM, reducing deployment-related service disruptions and improving production reliability.
+- Reduced post-deployment production verification from 25 minutes to 3 minutes through automated Production Verification Testing (PVT).
+- Strengthened Kubernetes security across four clusters through secrets management, service-to-service mTLS, and container vulnerability management.
+- Automated incident creation by integrating Prometheus Alertmanager with ServiceNow using a reusable Go webhook, later adopted by multiple engineering teams.
+- Received the 2020 LexisNexis Apollo Award for developing a TypeScript function in a GraphQL API that powered open-source text links on the COVID-19 and Racial Equality and Police Reform product pages; those pages saw a 10% increase in user traffic.
+- Won the 2020 LexisNexis State Net Hackathon by developing an automated Jenkins CI/CD pipeline to deploy Docker images to AWS EKS clusters, reducing development cycle time by 50%.
+
+<details className="project-details">
+  <summary>Platform Engineering & Kubernetes</summary>
+
+- Led a Chaos Engineering initiative with Chaos Mesh that identified six production reliability improvements, including hardened liveness and readiness probes.
+- Designed and deployed Linkerd service mesh across four Kubernetes clusters using infrastructure as code and mTLS to secure service-to-service communication and meet security requirements.
+- Deployed Jaeger across four clusters for distributed tracing. Used production traces to identify and optimize three slow queries in response to customer performance concerns.
+- Deployed Grafana and Prometheus across all Kubernetes clusters to establish centralized monitoring and observability for production services.
+- Developed and maintained four AWS CloudFormation templates to provision and manage EKS clusters, enabling repeatable infrastructure-as-code upgrades using eksctl.
+- Consolidated 35 AWS Elastic Load Balancers into seven Application Load Balancers across AWS EKS clusters, reducing infrastructure complexity and saving approximately $10K annually in cloud costs.
+- Upgraded four Ambassador API Gateway instances to Ambassador Edge Stack, migrating production workloads without downtime while supporting cost reduction and using AWS Layer 7 load balancing.
+- Configured Fluentd in the EFK stack to parse and structure application logs into Kibana data buckets, improving log discovery and troubleshooting.
+</details>
+
+<details className="project-details">
+  <summary>Security & Compliance</summary>
+
+- Led deployment of Sealed Secrets across four Kubernetes clusters, securing approximately 40 application secrets and supporting organizational security requirements.
+- Deployed and standardized Twistlock across four clusters using infrastructure as code, achieving full cluster coverage and establishing automated quarterly CVE patching reminders.
+- Upgraded four AWS Application Load Balancers to TLS 1.2 to meet security requirements without service disruption or downtime.
+- Integrated LDAP authentication with Kubernetes-hosted applications, including Argo CD and Grafana, enabling engineers to sign in with their corporate legal IDs.
+</details>
+
+<details className="project-details">
+  <summary>CI/CD & Engineering Automation</summary>
+
+- Led implementation of PVT using Argo CD Sync Phases and Waves to orchestrate automated post-deployment tests. Built the test suite with Python and Selenium, reducing verification time from 25 minutes to 3 minutes.
+- Integrated an internal API into CI/CD pipelines to collect and report DORA metrics, achieving full coverage across microservices and improving visibility into engineering delivery.
+- Automated daily production release reporting with a Python application running as a Kubernetes CronJob. It combines Azure DevOps release notes with Microsoft Teams posts, eliminating 20 minutes of manual reporting each day.
+- Developed approximately 30 Prometheus Alertmanager rules as configuration code to support production incident detection, triage, and remediation.
+- Developed highly praised side projects reused by multiple engineering teams, including a documented Go webhook that transforms Prometheus alerts into ServiceNow-compatible incident requests, a release communication manager using Microsoft Teams APIs, and a Jenkins workflow for automatic deployments to development environments.
+</details>
+
+<details className="project-details">
+  <summary>Software Architecture & Application Development</summary>
+
+- Founded and architected three TypeScript GraphQL APIs using GraphQL Federation, taking them from initial design through production deployment. They established the API foundation and primary entry point for a new product experience, replacing a 20-year-old Perl monolith.
+- Implemented approximately 10 TypeScript GraphQL resolvers to support the new product's user interface and deliver required API functionality for launch.
+- Optimized a Python Flask API by reducing recursive function calls from nine to six and tuning SQL queries for Elasticsearch-backed search, cutting database response time by 25%.
+</details>
+
+<details className="project-details">
+  <summary>Technical Leadership & Mentorship</summary>
+
+- Mentored three senior engineers in Git and Kubernetes through hands-on coaching and technical documentation, helping them become independently proficient within a few days.
+</details>
+
+<details className="project-details">
+  <summary>Production Operations & Incident Response</summary>
+
+- Participated in a weekly on-call rotation, triaging and resolving P1-P5 incidents with typical resolution times of 1-2 hours. Created postmortems to document findings and tracked follow-up actions through closure.
+</details>
