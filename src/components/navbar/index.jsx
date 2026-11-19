@@ -31,7 +31,7 @@ class NavBar extends Component {
             <div className="site-social-links">
               <Button variant="dark" href="https://www.linkedin.com/in/johnyacuta/">
                 <img
-                  src="./linkedin-brands.svg"
+                  src="/components/navbar/linkedin-brands.svg"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -39,7 +39,7 @@ class NavBar extends Component {
               </Button>
               <Button variant="dark" href="https://github.com/johnyacuta">
                 <img
-                  src="./github-brands.svg"
+                  src="/components/navbar/github-brands.svg"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
