@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
 import AboutMeContent, { title } from './index.mdx';
+import TechnologyContent, { title as technologyTitle } from './technology.mdx';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
@@ -88,6 +89,17 @@ export function AboutContent() {
 
 export function AboutSection({ title: sectionTitle }) {
   return <h1 className="page-heading">{sectionTitle}</h1>;
+}
+
+export function TechnologyPage() {
+  return (
+    <>
+      <h1 className="page-heading">{technologyTitle}</h1>
+      <div className="about-page-content">
+        <TechnologyContent />
+      </div>
+    </>
+  );
 }
 
 export default AboutMe;
