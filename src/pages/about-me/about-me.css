@@ -44,26 +44,10 @@
 
 .homebrew-beer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.homebrew-beer-card {
-  display: flex;
-  aspect-ratio: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 1.25rem;
-  border: 1px solid #e8dcc5;
-  border-radius: 0.75rem;
-  background: linear-gradient(145deg, #fff8eb, #f2e3c7);
-  text-align: center;
-}
-
-.homebrew-beer-card h2 {
-  margin: 0;
-  font-size: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 @media (max-width: 767.98px) {
