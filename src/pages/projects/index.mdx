@@ -1,27 +1,255 @@
 export const title = 'Projects';
 
-In my years of working in Software and DevOps/Platform engineering, I have worked on a variety of projects and with many different teams. I have found that one of the most rewarding aspects of my career has been solving complex problems and sharing that knowledge with others.
+Over the years, I've worked on a wide range of projects across software and DevOps/platform engineering, collaborating with many different teams. I especially enjoy solving complex problems and sharing what I learn.
 
-Below are the various projects that I have worked on.
+Here are a few examples of my work.
 
 ### Personal Projects
 
+<details className="company-pod">
+  <summary>
+    <span className="company-pod-name">GitHub</span>
+    <span className="company-pod-hint">Personal project details</span>
+  </summary>
+  <div className="company-pod-content">
+
+Explore these personal projects on [GitHub](https://github.com/johnyacuta).
+
 - My personal website
-  - This website is built using React. It serves as a platform for me to share my thoughts and experiences in the tech industry. I wanted to create a space where I could document my journey and connect with others in the community. Built with React.
-- Base64 Converter
-  - I created a simple Base64 converter tool that allows users to encode and decode Base64 strings. This project was born out of a need for a quick and easy way to convert data without having to rely on external tools or websites. Built with Python and Typer.
+  - A website where I share my thoughts and experiences in technology, document my professional journey, and connect with others. Built with React.
 - Personal website - Laurel
-  - I built my wife a personal website which is very similar to this one which I could consider it a framework for building portfolio website. Built with React.
+  - A personal website I built for my wife. It shares a similar structure to this site and serves as a starting point for building portfolio websites. Built with React.
+- Recruiter Opportunity Evaluator Agent Skill
+  - An agent skill that helps assess recruiter communications about job opportunities.
+- Engineering Resume Reviewer Agent Skill
+  - An agent skill that provides feedback on engineering resumes using the STAR method.
+- Set-up scripts
+  - Installation scripts that simplify software development environment setup.
 - Do Something Application
-  - A web application that allows users to search using zip codes for political figures who have received funding from a gun organization(s). The web application leverages a public API for data retrieval. Built with React.
+  - A web application that lets users search by ZIP code for political figures who have received funding from gun organizations. It retrieves information from a public API. Built with React.
+- Base64 Converter
+  - A tool for encoding and decoding Base64 strings, created to make common conversions quick and easy. Built with Python and Typer.
+
+</div>
+</details>
 
 ### Work Projects
 
-- Submittable
-  - Deploy the product application to a new region
-    - I developed infrastructure as code to deploy a product application to a new region as a proof of concept, ensuring compliance with local regulations and data privacy laws. Built with Kubernetes, Crossplane, and AWS CDK.
-  - Cloud cost savings initiative
-    - I led a cloud cost savings initiative in both AWS and Azure that resulted in a 30% reduction in cloud spending by optimizing resource usage and implementing cost-saving measures such as rightsizing, Savings Plans, and Reserved Instances.
-- AI Assistant
-  - I delivered an AI assistant project through to production that leverages the power of custom models to assist with grantmaking tasks. The goal is to create a tool that can help users automate repetitive tasks and improve productivity. I led the development efforts and collaborated with a team of engineers and product to build the application. Built with Microsoft Azure OpenAI and Copilot Studio.
-- More to come!
+Below are projects I contributed to or led through production for each employer, ordered from most recent to earliest. Feel free to connect if you'd like to learn more about my work.
+
+<details className="company-pod">
+  <summary>
+    <span className="company-pod-name">Zip Co</span>
+    <span className="company-pod-hint">Highlights & project details</span>
+  </summary>
+  <div className="company-pod-content">
+
+##### Key highlights
+
+- Enabled production deployment of the platform's second AI agent, its first customer-facing agent delivered end to end on GCP, by leading implementation of private connectivity between GCP and Azure.
+- Built an AI-driven self-service platform that grew adoption from zero to eight applications in three months.
+- Created a reusable Terraform AKS landing-zone module adopted for four clusters and zero-downtime upgrades.
+- Architected a hub-and-spoke GitOps model managing 39 deployments across development, staging, and production.
+- Migrated 100% of company pipeline traffic to Managed DevOps Pools (MDOP).
+- Migrated approximately 30 Terraform infrastructure pipelines from env0 to Atlantis without service disruptions, eliminating the organization's env0 dependency and avoiding contract renewal costs.
+- Participated in weekly on-call rotations and used Jeli's AI-assisted postmortems to track incidents and follow-up actions through closure.
+
+<details className="project-details">
+  <summary>AI Enablement & Platform Delivery</summary>
+
+- Enabled production deployment of the platform's second AI agent, the first customer-facing agent delivered end to end on GCP, by leading cross-functional implementation of Terraform-managed private connectivity between GCP and Azure.
+- Developed an AI-driven self-service platform using a custom Cursor agent to turn natural-language requests into templated Python/FastAPI services and Terraform plans for Azure Container Apps. Internal adoption grew from zero to eight applications in three months.
+</details>
+
+<details className="project-details">
+  <summary>Kubernetes & GitOps</summary>
+
+- Built a reusable Terraform AKS landing-zone module with company service dependencies using AI-assisted development, and created its documentation. Guided team adoption; the team used it to build four clusters and complete upgrades with zero production downtime.
+- Architected a hub-and-spoke GitOps model with a central infrastructure cluster and Argo CD to manage on-demand spoke clusters. Brought third-party applications such as Kyverno under Helm-based configuration management across development, staging, and production, for 39 deployments in total.
+</details>
+
+<details className="project-details">
+  <summary>CI/CD & Developer Infrastructure</summary>
+
+- Created a Terraform module for Managed DevOps Pools (MDOP) with AI-assisted development. Migrated Azure DevOps pipelines for approximately five service teams from VM Scale Set (VMSS) agents, documented the handoff, and moved 100% of company pipeline traffic to MDOP, enabling another engineer to operate the solution with minimal guidance.
+- Migrated approximately 30 Terraform infrastructure pipelines from env0 to an Atlantis-managed repository, transitioning infrastructure provisioning and code management workflows without service disruptions. This eliminated the organization's env0 dependency, enabled platform retirement, and avoided contract renewal costs.
+</details>
+
+<details className="project-details">
+  <summary>Production Operations & Incident Response</summary>
+
+- Participated in a weekly on-call rotation, triaging and resolving P1-P5 incidents with typical resolution times of 1-2 hours. Used Jeli's AI-assisted postmortems to document findings and track follow-up actions through closure.
+</details>
+
+</div>
+</details>
+
+<details className="company-pod">
+  <summary>
+    <span className="company-pod-name">Submittable</span>
+    <span className="company-pod-hint">Highlights & project details</span>
+  </summary>
+  <div className="company-pod-content">
+
+##### Key highlights
+
+- Led AWS and Azure cost optimization by right-sizing AKS clusters, removing unused resources such as Cosmos DB instances, and applying AWS EC2 Savings Plans, generating approximately $100K in annual savings.
+- Developed four Crossplane modules for AWS-hosted dependencies, including S3 and Microsoft SQL Server, supporting the flagship product's deployment in a new region and establishing an IaC pattern for its planned AWS-to-Azure migration.
+- Supervised three DevOps engineers building Backstage capabilities across four products, including a Kubernetes onboarding template that reduced deployment to an Argo CD-managed development cluster from about one hour to under five minutes.
+- Led Shift Left and Shift Right security initiatives that achieved 100% repository scanning coverage and 100% vulnerability scanning coverage across third-party Helm charts.
+- Developed a centralized Engineering Metrics Exporter API to provide engineering leadership with visibility into team performance and operational metrics.
+- Delivered a hackathon-recognized AI Assistant from proof of concept to production for approximately 30 customers.
+
+<details className="project-details">
+  <summary>Cloud & Platform Engineering</summary>
+
+- Led AWS and Azure cost optimization by right-sizing AKS clusters, removing unused Cosmos DB instances, and applying AWS EC2 Savings Plans, generating approximately $100K in annual savings.
+- Developed four Crossplane modules for AWS-hosted dependencies, including S3 and Microsoft SQL Server. These supported the flagship product's deployment in a new region and established an infrastructure-as-code pattern for its planned AWS-to-Azure migration.
+- Supervised three DevOps engineers building Backstage platform capabilities across four products. The Kubernetes onboarding template reduced deployment to an Argo CD-managed development cluster from about one hour to under five minutes.
+- Designed self-service Kubernetes secrets management with the 1Password Operator and documented the workflows, replacing approximately two weekly infrastructure requests for secret creation with engineer-managed self-service.
+- Deployed the company's first Backstage developer portal and built an automated ingestion script that cataloged all repositories and assigned owners by mapping contributors to their teams.
+</details>
+
+<details className="project-details">
+  <summary>Security & Compliance</summary>
+
+- Led organization-wide Shift Left and Shift Right security hardening by enabling GitHub Advanced Security for repository vulnerability scanning and deploying Trivy across four Kubernetes clusters to scan third-party Helm charts. Integrated Renovate to update Helm dependencies through pull requests, achieving 100% repository scanning coverage and 100% vulnerability scanning coverage across third-party Helm charts.
+- Mentored an engineer through implementing organization-wide single sign-on between GitHub and Microsoft Entra ID, enabling secure, centralized access for the organization.
+- Centralized GitHub Actions workflows in a shared repository, adding automated tests and code quality checks and enabling GitHub Advanced Security scanning across 99% of organization repositories.
+- Provided requested infrastructure evidence for the 2022, 2023, and 2024 SOC 2 and HIPAA audits, helping complete all audit evidence requirements.
+</details>
+
+<details className="project-details">
+  <summary>Developer Experience & Engineering Metrics</summary>
+
+- Developed a centralized Engineering Metrics Exporter API using Python, FastAPI, and the Prometheus client library. It aggregates metrics on security posture, developer productivity, platform adoption, and infrastructure health from GitHub Advanced Security, Backstage, and Trivy, and integrates with Datadog to give engineering leadership visibility into team performance and operational metrics.
+</details>
+
+<details className="project-details">
+  <summary>AI Product Delivery</summary>
+
+- Delivered a hackathon-recognized AI Assistant from proof of concept to production for approximately 30 customers, leading its cross-functional technical vision and implementation with Azure OpenAI and Copilot Studio.
+</details>
+
+<details className="project-details">
+  <summary>Technical Leadership & Mentorship</summary>
+
+- Mentored three direct-report engineers through technical book clubs and pair programming, strengthening their ability to apply best practices in automation, security, and scalability.
+</details>
+
+<details className="project-details">
+  <summary>Production Operations & Incident Response</summary>
+
+- Participated in a weekly on-call rotation, triaging and resolving P1-P5 incidents with typical resolution times of 1-2 hours. Created postmortems to document findings and tracked follow-up actions through closure.
+</details>
+
+</div>
+</details>
+
+<details className="company-pod">
+  <summary>
+    <span className="company-pod-name">LexisNexis State Net</span>
+    <span className="company-pod-hint">Highlights & project details</span>
+  </summary>
+  <div className="company-pod-content">
+
+##### Key highlights
+
+- Modernized a legacy product architecture by founding and architecting three federated GraphQL APIs in TypeScript, replacing a 20-year-old Perl monolith and establishing the API foundation for a new product experience.
+- Led a zero-downtime initiative across 36 Kubernetes product services spanning three clusters by implementing readiness and liveness probes and graceful application termination using SIGTERM, reducing deployment-related service disruptions and improving production reliability.
+- Reduced post-deployment production verification from 25 minutes to 3 minutes through automated Production Verification Testing (PVT).
+- Strengthened Kubernetes security across four clusters through secrets management, service-to-service mTLS, and container vulnerability management.
+- Automated incident creation by integrating Prometheus Alertmanager with ServiceNow using a reusable Go webhook, later adopted by multiple engineering teams.
+- Received the 2020 LexisNexis Apollo Award for developing a TypeScript function in a GraphQL API that powered open-source text links on the COVID-19 and Racial Equality and Police Reform product pages; those pages saw a 10% increase in user traffic.
+- Won the 2020 LexisNexis State Net Hackathon by developing an automated Jenkins CI/CD pipeline to deploy Docker images to AWS EKS clusters, reducing development cycle time by 50%.
+
+<details className="project-details">
+  <summary>Platform Engineering & Kubernetes</summary>
+
+- Led a Chaos Engineering initiative with Chaos Mesh that identified six production reliability improvements, including hardened liveness and readiness probes.
+- Designed and deployed Linkerd service mesh across four Kubernetes clusters using infrastructure as code and mTLS to secure service-to-service communication and meet security requirements.
+- Deployed Jaeger across four clusters for distributed tracing. Used production traces to identify and optimize three slow queries in response to customer performance concerns.
+- Deployed Grafana and Prometheus across all Kubernetes clusters to establish centralized monitoring and observability for production services.
+- Developed and maintained four AWS CloudFormation templates to provision and manage EKS clusters, enabling repeatable infrastructure-as-code upgrades using eksctl.
+- Consolidated 35 AWS Elastic Load Balancers into seven Application Load Balancers across AWS EKS clusters, reducing infrastructure complexity and saving approximately $10K annually in cloud costs.
+- Upgraded four Ambassador API Gateway instances to Ambassador Edge Stack, migrating production workloads without downtime while supporting cost reduction and using AWS Layer 7 load balancing.
+- Configured Fluentd in the EFK stack to parse and structure application logs into Kibana data buckets, improving log discovery and troubleshooting.
+</details>
+
+<details className="project-details">
+  <summary>Security & Compliance</summary>
+
+- Led deployment of Sealed Secrets across four Kubernetes clusters, securing approximately 40 application secrets and supporting organizational security requirements.
+- Deployed and standardized Twistlock across four clusters using infrastructure as code, achieving full cluster coverage and establishing automated quarterly CVE patching reminders.
+- Upgraded four AWS Application Load Balancers to TLS 1.2 to meet security requirements without service disruption or downtime.
+- Integrated LDAP authentication with Kubernetes-hosted applications, including Argo CD and Grafana, enabling engineers to sign in with their corporate legal IDs.
+</details>
+
+<details className="project-details">
+  <summary>CI/CD & Engineering Automation</summary>
+
+- Led implementation of PVT using Argo CD Sync Phases and Waves to orchestrate automated post-deployment tests. Built the test suite with Python and Selenium, reducing verification time from 25 minutes to 3 minutes.
+- Integrated an internal API into CI/CD pipelines to collect and report DORA metrics, achieving full coverage across microservices and improving visibility into engineering delivery.
+- Automated daily production release reporting with a Python application running as a Kubernetes CronJob. It combines Azure DevOps release notes with Microsoft Teams posts, eliminating 20 minutes of manual reporting each day.
+- Developed approximately 30 Prometheus Alertmanager rules as configuration code to support production incident detection, triage, and remediation.
+- Developed highly praised side projects reused by multiple engineering teams, including a documented Go webhook that transforms Prometheus alerts into ServiceNow-compatible incident requests, a release communication manager using Microsoft Teams APIs, and a Jenkins workflow for automatic deployments to development environments.
+</details>
+
+<details className="project-details">
+  <summary>Software Architecture & Application Development</summary>
+
+- Founded and architected three TypeScript GraphQL APIs using GraphQL Federation, taking them from initial design through production deployment. They established the API foundation and primary entry point for a new product experience, replacing a 20-year-old Perl monolith.
+- Implemented approximately 10 TypeScript GraphQL resolvers to support the new product's user interface and deliver required API functionality for launch.
+- Optimized a Python Flask API by reducing recursive function calls from nine to six and tuning SQL queries for Elasticsearch-backed search, cutting database response time by 25%.
+</details>
+
+<details className="project-details">
+  <summary>Technical Leadership & Mentorship</summary>
+
+- Mentored three senior engineers in Git and Kubernetes through hands-on coaching and technical documentation, helping them become independently proficient within a few days.
+</details>
+
+<details className="project-details">
+  <summary>Production Operations & Incident Response</summary>
+
+- Participated in a weekly on-call rotation, triaging and resolving P1-P5 incidents with typical resolution times of 1-2 hours. Created postmortems to document findings and tracked follow-up actions through closure.
+</details>
+
+</div>
+</details>
+
+<details className="company-pod">
+  <summary>
+    <span className="company-pod-name">Intel Corporation</span>
+    <span className="company-pod-hint">Highlights & project details</span>
+  </summary>
+  <div className="company-pod-content">
+
+##### Key highlights
+
+- Maintained typically four pre-release systems and achieved first boot in under two hours per system.
+- Built an interactive graph to help customers evaluate enhanced Modern Standby test results.
+- Reduced test execution time from 2-4 hours to 30 minutes through Python and Selenium automation.
+- Identified and reported approximately 1-3 bugs per session before customer release.
+
+<details className="project-details">
+  <summary>Pre-release Systems & Validation</summary>
+
+- Assembled and maintained typically four pre-release systems under test with custom chipsets, CPUs, motherboards, and RAM. Flashed custom firmware and installed Windows 10 to achieve first boot in under two hours per system.
+- Created and manually tested TypeScript features in an AngularJS application on pre-release systems, identifying and reporting approximately 1-3 bugs per session before customer release.
+</details>
+
+<details className="project-details">
+  <summary>Application Development</summary>
+
+- Built a TypeScript graph in an AngularJS Windows 10 application to visualize enhanced Modern Standby test results, helping customers assess hardware performance and make informed decisions.
+</details>
+
+<details className="project-details">
+  <summary>Test Automation</summary>
+
+- Developed Python and Selenium scripts to automate manual test workflows, reducing test execution time from 2-4 hours to 30 minutes.
+</details>
+
+</div>
+</details>
