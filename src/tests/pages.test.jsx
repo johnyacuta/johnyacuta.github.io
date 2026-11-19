@@ -61,6 +61,23 @@ describe('site pages', () => {
     renderAboutRoute('/about-me/technology');
 
     expect(screen.getByRole('heading', { name: 'Technology' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Technologies I work with most' })
+    ).toBeInTheDocument();
+    [
+      'Azure',
+      'AWS',
+      'Python',
+      'TypeScript',
+      'JavaScript',
+      'Terraform',
+      'Crossplane',
+      'GitHub Actions',
+      'Argo CD',
+      'Kubernetes',
+    ].forEach((technology) => {
+      expect(screen.getByText(technology)).toBeInTheDocument();
+    });
     expect(screen.getByText(/building and operating Kubernetes platforms/i)).toBeInTheDocument();
   });
 
@@ -72,6 +89,12 @@ describe('site pages', () => {
     expect(screen.getByRole('heading', { name: 'Nut Brown Ale' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Bavarian Hefeweizen' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Irish Red Ale' })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: 'The Innkeeper Ale' })).toHaveAttribute(
+      'src',
+      '/pages/about-me/the-innkeeper-ale.webp'
+    );
+    expect(screen.getAllByText('ABV:')).toHaveLength(4);
+    expect(screen.getByText(/banana and clove aromas/i)).toBeInTheDocument();
   });
 
   it('renders the Travel page', () => {

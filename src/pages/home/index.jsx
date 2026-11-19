@@ -33,7 +33,7 @@ function Home() {
         </Col>
         <Col lg={5} className="home-image-column">
           <Image
-            src="/john-profile.JPG"
+            src="/pages/home/john-profile.jpg"
             rounded
             fluid
             className="home-profile-image"

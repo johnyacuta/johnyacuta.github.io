@@ -3,21 +3,18 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
+import Card from '../../components/card';
 import AboutMeContent, { title } from './index.mdx';
-import HomebrewingContent, { title as homebrewingTitle } from './homebrewing.mdx';
+import HomebrewingContent, {
+  beers,
+  title as homebrewingTitle,
+} from './homebrewing.mdx';
 import TechnologyContent, { title as technologyTitle } from './technology.mdx';
 import '../page.css';
 import './about-me.css';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
-
-const homebrewedBeers = [
-  'The Innkeeper Ale',
-  'Nut Brown Ale',
-  'Bavarian Hefeweizen',
-  'Irish Red Ale',
-];
 
 function AboutMe() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -108,10 +105,13 @@ export function HomebrewingPage() {
       <div className="about-page-content">
         <HomebrewingContent />
         <div className="homebrew-beer-grid">
-          {homebrewedBeers.map((beer) => (
-            <article className="homebrew-beer-card" key={beer}>
-              <h2>{beer}</h2>
-            </article>
+          {beers.map(({ name, image, description, abv }) => (
+            <Card key={name} image={image} imageAlt={name} title={name}>
+              <p>{description}</p>
+              <p className="content-card-abv">
+                <strong>ABV:</strong> {abv}
+              </p>
+            </Card>
           ))}
         </div>
       </div>
