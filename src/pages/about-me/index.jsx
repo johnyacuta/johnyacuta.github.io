@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
-import Card from '../../components/card';
+import BeerCard from '../../components/cards/beer-card';
 import AboutMeContent, { title } from './index.mdx';
 import HomebrewingContent, {
   beers,
@@ -106,12 +106,13 @@ export function HomebrewingPage() {
         <HomebrewingContent />
         <div className="homebrew-beer-grid">
           {beers.map(({ name, image, description, abv }) => (
-            <Card key={name} image={image} imageAlt={name} title={name}>
-              <p>{description}</p>
-              <p className="content-card-abv">
-                <strong>ABV:</strong> {abv}
-              </p>
-            </Card>
+            <BeerCard
+              key={name}
+              name={name}
+              image={image}
+              description={description}
+              abv={abv}
+            />
           ))}
         </div>
       </div>
