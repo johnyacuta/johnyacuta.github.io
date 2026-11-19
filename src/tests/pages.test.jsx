@@ -61,6 +61,23 @@ describe('site pages', () => {
     renderAboutRoute('/about-me/technology');
 
     expect(screen.getByRole('heading', { name: 'Technology' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Technologies I work with most' })
+    ).toBeInTheDocument();
+    [
+      'Azure',
+      'AWS',
+      'Python',
+      'TypeScript',
+      'JavaScript',
+      'Terraform',
+      'Crossplane',
+      'GitHub Actions',
+      'Argo CD',
+      'Kubernetes',
+    ].forEach((technology) => {
+      expect(screen.getByText(technology)).toBeInTheDocument();
+    });
     expect(screen.getByText(/building and operating Kubernetes platforms/i)).toBeInTheDocument();
   });
 
