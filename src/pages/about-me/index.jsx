@@ -12,6 +12,7 @@ import HomebrewingContent, {
 import TechnologyContent, {
   intro as technologyIntro,
   title as technologyTitle,
+  technologyGroupsHeading,
   technologyGroups,
 } from './technology.mdx';
 import TechnologyHighlightCard from '../../components/cards/technology-highlight-card';
@@ -138,7 +139,7 @@ export function TechnologyPage() {
           aria-labelledby="technology-highlights-heading"
         >
           <h2 id="technology-highlights-heading">
-            Technologies I work with most
+            {technologyGroupsHeading}
           </h2>
           <div className="technology-highlight-grid">
             {technologyGroups.map(({ name, technologies }) => (
