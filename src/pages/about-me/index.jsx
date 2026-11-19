@@ -3,15 +3,27 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
-import Card from '../../components/card';
+import BeerCard from '../../components/cards/beer-card';
 import AboutMeContent, { title } from './index.mdx';
 import HomebrewingContent, {
   beers,
   title as homebrewingTitle,
 } from './homebrewing.mdx';
-import TechnologyContent, { title as technologyTitle } from './technology.mdx';
+import TechnologyContent, {
+  intro as technologyIntro,
+  title as technologyTitle,
+  technologyGroupsHeading,
+  technologyGroups,
+} from './technology.mdx';
+import TechnologyHighlightCard from '../../components/cards/technology-highlight-card';
+import TravelCard from '../../components/cards/travel-card';
 import '../page.css';
 import './about-me.css';
+import {
+  intro as travelIntro,
+  title as travelTitle,
+  travelDestinations,
+} from './travel.mdx';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
@@ -94,10 +106,6 @@ export function AboutContent() {
   );
 }
 
-export function AboutSection({ title: sectionTitle }) {
-  return <h1 className="page-heading">{sectionTitle}</h1>;
-}
-
 export function HomebrewingPage() {
   return (
     <>
@@ -106,12 +114,13 @@ export function HomebrewingPage() {
         <HomebrewingContent />
         <div className="homebrew-beer-grid">
           {beers.map(({ name, image, description, abv }) => (
-            <Card key={name} image={image} imageAlt={name} title={name}>
-              <p>{description}</p>
-              <p className="content-card-abv">
-                <strong>ABV:</strong> {abv}
-              </p>
-            </Card>
+            <BeerCard
+              key={name}
+              name={name}
+              image={image}
+              description={description}
+              abv={abv}
+            />
           ))}
         </div>
       </div>
@@ -124,7 +133,41 @@ export function TechnologyPage() {
     <>
       <h1 className="page-heading">{technologyTitle}</h1>
       <div className="about-page-content">
+        <p>{technologyIntro}</p>
+        <section
+          className="technology-highlights"
+          aria-labelledby="technology-highlights-heading"
+        >
+          <h2 id="technology-highlights-heading">
+            {technologyGroupsHeading}
+          </h2>
+          <div className="technology-highlight-grid">
+            {technologyGroups.map(({ name, technologies }) => (
+              <TechnologyHighlightCard
+                key={name}
+                name={name}
+                technologies={technologies}
+              />
+            ))}
+          </div>
+        </section>
         <TechnologyContent />
+      </div>
+    </>
+  );
+}
+
+export function TravelPage() {
+  return (
+    <>
+      <h1 className="page-heading">{travelTitle}</h1>
+      <div className="about-page-content">
+        <p>{travelIntro}</p>
+        <div className="travel-card-grid">
+          {travelDestinations.map((destination) => (
+            <TravelCard key={destination.destination} {...destination} />
+          ))}
+        </div>
       </div>
     </>
   );
