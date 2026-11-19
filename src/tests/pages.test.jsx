@@ -108,6 +108,7 @@ describe('site pages', () => {
     expect(
       screen.getByRole('heading', { name: 'Prague, Czech Republic' })
     ).toBeInTheDocument();
+    expect(screen.getAllByText('August - September 2026')).toHaveLength(2);
     expect(screen.getByRole('img', { name: 'Prague, Czech Republic' })).toHaveAttribute(
       'src',
       '/pages/about-me/travel/prague.jpg'

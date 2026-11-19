@@ -21,6 +21,12 @@
   font-size: 1.2rem;
 }
 
+.travel-card-visited {
+  margin-bottom: 0.75rem;
+  color: #495057;
+  font-size: 0.95rem;
+}
+
 .travel-card-recommendations {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
