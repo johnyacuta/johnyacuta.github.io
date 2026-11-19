@@ -75,6 +75,10 @@ describe('site pages', () => {
       'GitHub Actions',
       'Argo CD',
       'Kubernetes',
+      'Dynatrace',
+      'Datadog',
+      'Grafana',
+      'Kibana',
     ].forEach((technology) => {
       expect(screen.getByText(technology)).toBeInTheDocument();
     });

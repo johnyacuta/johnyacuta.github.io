@@ -50,6 +50,26 @@
   padding-top: 1rem;
 }
 
+.technology-highlights {
+  margin: 2rem 0 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid #d5e4f2;
+  border-left: 0.35rem solid #0d6efd;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #f5f9ff, #fff);
+}
+
+.technology-highlights > h2 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+}
+
+.technology-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 0.75rem;
+}
+
 @media (max-width: 767.98px) {
   .about-sidebar {
     display: none;

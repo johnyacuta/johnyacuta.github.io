@@ -9,7 +9,12 @@ import HomebrewingContent, {
   beers,
   title as homebrewingTitle,
 } from './homebrewing.mdx';
-import TechnologyContent, { title as technologyTitle } from './technology.mdx';
+import TechnologyContent, {
+  intro as technologyIntro,
+  title as technologyTitle,
+  technologyGroups,
+} from './technology.mdx';
+import TechnologyHighlightCard from '../../components/cards/technology-highlight-card';
 import '../page.css';
 import './about-me.css';
 
@@ -125,6 +130,24 @@ export function TechnologyPage() {
     <>
       <h1 className="page-heading">{technologyTitle}</h1>
       <div className="about-page-content">
+        <p>{technologyIntro}</p>
+        <section
+          className="technology-highlights"
+          aria-labelledby="technology-highlights-heading"
+        >
+          <h2 id="technology-highlights-heading">
+            Technologies I work with most
+          </h2>
+          <div className="technology-highlight-grid">
+            {technologyGroups.map(({ name, technologies }) => (
+              <TechnologyHighlightCard
+                key={name}
+                name={name}
+                technologies={technologies}
+              />
+            ))}
+          </div>
+        </section>
         <TechnologyContent />
       </div>
     </>
