@@ -4,7 +4,7 @@ A personal website built with React, Vite, React Bootstrap, and MDX. Vite handle
 
 ## Requirements
 
-- Node.js compatible with the Vite version in `package.json`, and npm.
+- Node.js 22 or later, and npm.
 
 ## Getting Started
 
