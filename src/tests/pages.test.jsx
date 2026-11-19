@@ -5,9 +5,9 @@ import Home from '../pages/home';
 import Projects from '../pages/projects';
 import AboutMe, {
   AboutContent,
-  AboutSection,
   HomebrewingPage,
   TechnologyPage,
+  TravelPage,
 } from '../pages/about-me';
 
 afterEach(cleanup);
@@ -20,7 +20,7 @@ function renderAboutRoute(path) {
           <Route index element={<AboutContent />} />
           <Route path="technology" element={<TechnologyPage />} />
           <Route path="homebrewing" element={<HomebrewingPage />} />
-          <Route path="travel" element={<AboutSection title="Travel" />} />
+          <Route path="travel" element={<TravelPage />} />
         </Route>
       </Routes>
     </MemoryRouter>
@@ -95,7 +95,7 @@ describe('site pages', () => {
     expect(screen.getByRole('heading', { name: 'Irish Red Ale' })).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'The Innkeeper Ale' })).toHaveAttribute(
       'src',
-      '/pages/about-me/the-innkeeper-ale.webp'
+      '/pages/about-me/homebrewing/the-innkeeper-ale.webp'
     );
     expect(screen.getAllByText('ABV:')).toHaveLength(4);
     expect(screen.getByText(/banana and clove aromas/i)).toBeInTheDocument();
@@ -105,5 +105,20 @@ describe('site pages', () => {
     renderAboutRoute('/about-me/travel');
 
     expect(screen.getByRole('heading', { name: 'Travel' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Prague, Czech Republic' })
+    ).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: 'Prague, Czech Republic' })).toHaveAttribute(
+      'src',
+      '/pages/about-me/travel/prague.jpg'
+    );
+    expect(screen.getByRole('link', { name: 'Prague Castle' })).toHaveAttribute(
+      'href',
+      'https://www.hrad.cz/en/prague-castle-for-visitors'
+    );
+    expect(screen.getByRole('link', { name: 'Caravana cafebar' })).toHaveAttribute(
+      'href',
+      'https://maps.app.goo.gl/gTLooy8NqC6M3Bg67'
+    );
   });
 });

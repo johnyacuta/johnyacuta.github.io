@@ -1,0 +1,44 @@
+.travel-card {
+  overflow: hidden;
+  border: 1px solid #e8dcc5;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.travel-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.travel-card-body {
+  padding: 1rem 1.125rem 1.125rem;
+}
+
+.travel-card-body > h2 {
+  margin: 0 0 0.625rem;
+  font-size: 1.2rem;
+}
+
+.travel-card-recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.travel-card-recommendation {
+  padding: 0.875rem;
+  border-radius: 0.5rem;
+  background: #f8f9fa;
+}
+
+.travel-card-recommendation h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.travel-card-recommendation p {
+  margin: 0.5rem 0 0;
+}

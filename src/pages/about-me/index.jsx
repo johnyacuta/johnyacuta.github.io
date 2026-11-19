@@ -15,8 +15,14 @@ import TechnologyContent, {
   technologyGroups,
 } from './technology.mdx';
 import TechnologyHighlightCard from '../../components/cards/technology-highlight-card';
+import TravelCard from '../../components/cards/travel-card';
 import '../page.css';
 import './about-me.css';
+import {
+  intro as travelIntro,
+  title as travelTitle,
+  travelDestinations,
+} from './travel.mdx';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
@@ -99,10 +105,6 @@ export function AboutContent() {
   );
 }
 
-export function AboutSection({ title: sectionTitle }) {
-  return <h1 className="page-heading">{sectionTitle}</h1>;
-}
-
 export function HomebrewingPage() {
   return (
     <>
@@ -149,6 +151,22 @@ export function TechnologyPage() {
           </div>
         </section>
         <TechnologyContent />
+      </div>
+    </>
+  );
+}
+
+export function TravelPage() {
+  return (
+    <>
+      <h1 className="page-heading">{travelTitle}</h1>
+      <div className="about-page-content">
+        <p>{travelIntro}</p>
+        <div className="travel-card-grid">
+          {travelDestinations.map((destination) => (
+            <TravelCard key={destination.destination} {...destination} />
+          ))}
+        </div>
       </div>
     </>
   );

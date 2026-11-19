@@ -50,6 +50,14 @@
   padding-top: 1rem;
 }
 
+.travel-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
 .technology-highlights {
   margin: 2rem 0 2.5rem;
   padding: 1.5rem;
