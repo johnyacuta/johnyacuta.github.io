@@ -2,7 +2,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import NavBar from './components/navbar';
 import Home from './pages/home';
 import Projects from './pages/projects';
-import AboutMe, { AboutContent, AboutSection, TechnologyPage } from "./pages/about-me";
+import AboutMe, { AboutContent, AboutSection, HomebrewingPage, TechnologyPage } from "./pages/about-me";
 import Footer from "./components/footer";
 import './App.css';
 
@@ -25,7 +25,7 @@ function App() {
             <Route path="/about-me" element={<AboutMe/>}>
               <Route index element={<AboutContent/>}/>
               <Route path="technology" element={<TechnologyPage/>}/>
-              <Route path="homebrewing" element={<AboutSection title="Homebrewing"/>}/>
+              <Route path="homebrewing" element={<HomebrewingPage/>}/>
               <Route path="travel" element={<AboutSection title="Travel"/>}/>
             </Route>
           </Routes>

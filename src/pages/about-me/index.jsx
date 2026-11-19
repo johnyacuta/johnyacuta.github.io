@@ -4,10 +4,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
 import AboutMeContent, { title } from './index.mdx';
+import HomebrewingContent, { title as homebrewingTitle } from './homebrewing.mdx';
 import TechnologyContent, { title as technologyTitle } from './technology.mdx';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
+
+const homebrewedBeers = [
+  'The Innkeeper Ale',
+  'Nut Brown Ale',
+  'Bavarian Hefeweizen',
+  'Irish Red Ale',
+];
 
 function AboutMe() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -89,6 +97,24 @@ export function AboutContent() {
 
 export function AboutSection({ title: sectionTitle }) {
   return <h1 className="page-heading">{sectionTitle}</h1>;
+}
+
+export function HomebrewingPage() {
+  return (
+    <>
+      <h1 className="page-heading">{homebrewingTitle}</h1>
+      <div className="about-page-content">
+        <HomebrewingContent />
+        <div className="homebrew-beer-grid">
+          {homebrewedBeers.map((beer) => (
+            <article className="homebrew-beer-card" key={beer}>
+              <h2>{beer}</h2>
+            </article>
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }
 
 export function TechnologyPage() {
