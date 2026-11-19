@@ -1,5 +1,19 @@
+.site-navbar {
+  background-color: #000;
+}
+
 .site-navbar .container {
   position: relative;
+}
+
+.site-navbar .site-nav-links .nav-link {
+  color: #fff;
+}
+
+.site-navbar .site-nav-links .nav-link:hover,
+.site-navbar .site-nav-links .nav-link:focus {
+  color: #fff;
+  opacity: 0.75;
 }
 
 .site-navbar-collapse {
@@ -15,6 +29,15 @@
 .site-social-links {
   display: flex;
   margin-left: auto;
+}
+
+.site-navbar .site-social-links .btn {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.site-social-links img {
+  filter: brightness(0) invert(1);
 }
 
 @media (max-width: 991.98px) {

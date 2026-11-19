@@ -14,7 +14,6 @@ class NavBar extends Component {
   render() {
     return(
       <Navbar
-        bg="dark"
         variant="dark"
         expand="lg"
         expanded={this.state.expanded}
