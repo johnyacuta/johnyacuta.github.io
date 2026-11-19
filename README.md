@@ -4,7 +4,7 @@ A personal website built with React, Vite, React Bootstrap, and MDX. Vite handle
 
 ## Requirements
 
-- Node.js and npm
+- Node.js compatible with the Vite version in `package.json`, and npm.
 
 ## Getting Started
 
@@ -26,9 +26,10 @@ Open the local URL printed by Vite, usually [http://localhost:5173](http://local
 
 - `src/App.jsx` defines the application layout and routes.
 - `src/pages/` contains each page. The `.jsx` files define layout; accompanying `.mdx` files hold Markdown content.
+- `src/tests/` contains page-level tests written with Vitest and React Testing Library.
 - `src/components/` contains shared components such as the navbar and footer.
 - `public/` contains static assets.
-- `vite.config.js` configures Vite, React, and MDX.
+- `vite.config.mjs` configures Vite, React, MDX, and the Vitest test environment.
 
 ### Writing page content
 
@@ -41,6 +42,16 @@ This content is written in Markdown.
 ```
 
 Import the MDX file from the page's `.jsx` file to render it as a React component.
+
+## Tests
+
+Run the page tests once:
+
+```sh
+npm test
+```
+
+The tests use Vitest, jsdom, and React Testing Library to check that each page renders its basic content and navigation.
 
 ## Build and Preview
 
@@ -58,6 +69,6 @@ npm run serve
 
 ## Deployment
 
-The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and deploys the site automatically whenever changes are pushed to `main` (including merged pull requests). It can also be started manually from the repository's **Actions** tab.
+The GitHub Actions workflow in `.github/workflows/deploy.yml` runs tests, builds, and deploys the site when changes reach `main`, including merged pull requests. Pushes that change only `README.md` or files under `.github/` are ignored. The workflow can also be started manually from the repository's **Actions** tab.
 
 For the first deployment, open the repository's **Settings → Pages** and set the build and deployment source to **GitHub Actions**.

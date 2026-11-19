@@ -6,16 +6,27 @@ import Container from 'react-bootstrap/Container';
 import './navbar.css';
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { expanded: false };
+  }
+
   render() {
     return(
-      <Navbar bg="dark" variant="dark" expand="lg" className="site-navbar">
+      <Navbar
+        variant="dark"
+        expand="lg"
+        expanded={this.state.expanded}
+        onToggle={(expanded) => this.setState({ expanded })}
+        className="site-navbar"
+      >
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav" className="site-navbar-collapse">
             <Nav className="site-nav-links">
-              <Nav.Link as={Link} to="/home">Home</Nav.Link>
-              <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-              <Nav.Link as={Link} to="/about-me">About Me</Nav.Link>
+              <Nav.Link as={Link} to="/home" onClick={() => this.setState({ expanded: false })}>Home</Nav.Link>
+              <Nav.Link as={Link} to="/projects" onClick={() => this.setState({ expanded: false })}>Projects</Nav.Link>
+              <Nav.Link as={Link} to="/about-me" onClick={() => this.setState({ expanded: false })}>About Me</Nav.Link>
             </Nav>
             <div className="site-social-links">
               <Button variant="dark" href="https://www.linkedin.com/in/johnyacuta/">
