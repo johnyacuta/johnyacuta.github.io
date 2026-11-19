@@ -27,12 +27,57 @@ Explore these personal projects on [GitHub](https://github.com/johnyacuta).
 
 #### Submittable
 
-- **Product deployment to a new region:** Developed infrastructure as code for a proof-of-concept deployment, helping ensure compliance with local regulations and data privacy laws. Built with Kubernetes, Crossplane, and AWS CDK.
-- **Cloud cost savings:** Led an initiative across AWS and Azure that reduced cloud spending by 30% through resource optimization and measures such as rightsizing, Savings Plans, and Reserved Instances.
+##### Key highlights
 
-#### AI Assistant
+- **Annual cloud savings:** Led AWS and Azure cost optimization by right-sizing AKS clusters, removing unused resources such as Cosmos DB instances, and applying AWS EC2 Savings Plans, generating approximately $100K in annual savings.
+- **Regional product deployment:** Developed four Crossplane modules for AWS-hosted dependencies, including S3 and Microsoft SQL Server, supporting the flagship product's deployment in a new region and establishing an IaC pattern for its planned AWS-to-Azure migration.
+- **Developer platform:** Supervised three DevOps engineers building Backstage capabilities across four products, including a Kubernetes onboarding template that reduced deployment to an Argo CD-managed development cluster from about one hour to under five minutes.
+- **Security coverage:** Led Shift Left and Shift Right security initiatives that achieved 100% repository scanning coverage and 100% vulnerability scanning coverage across third-party Helm charts.
+- **Engineering visibility:** Developed a centralized Engineering Metrics Exporter API to provide engineering leadership with visibility into team performance and operational metrics.
+- **AI Assistant:** Delivered a hackathon-recognized AI Assistant from proof of concept to production for approximately 30 customers.
 
-Delivered an AI assistant from development through production. It uses custom models to support grantmaking tasks and help automate repetitive work. I led development in collaboration with engineering and product teams. Built with Microsoft Azure OpenAI and Copilot Studio.
+<details className="project-details">
+  <summary>Cloud & Platform Engineering</summary>
+
+- Led AWS and Azure cost optimization by right-sizing AKS clusters, removing unused Cosmos DB instances, and applying AWS EC2 Savings Plans, generating approximately $100K in annual savings.
+- Developed four Crossplane modules for AWS-hosted dependencies, including S3 and Microsoft SQL Server. These supported the flagship product's deployment in a new region and established an infrastructure-as-code pattern for its planned AWS-to-Azure migration.
+- Supervised three DevOps engineers building Backstage platform capabilities across four products. The Kubernetes onboarding template reduced deployment to an Argo CD-managed development cluster from about one hour to under five minutes.
+- Designed self-service Kubernetes secrets management with the 1Password Operator and documented the workflows, replacing approximately two weekly infrastructure requests for secret creation with engineer-managed self-service.
+- Deployed the company's first Backstage developer portal and built an automated ingestion script that cataloged all repositories and assigned owners by mapping contributors to their teams.
+</details>
+
+<details className="project-details">
+  <summary>Security & Compliance</summary>
+
+- Led organization-wide Shift Left and Shift Right security hardening by enabling GitHub Advanced Security for repository vulnerability scanning and deploying Trivy across four Kubernetes clusters to scan third-party Helm charts. Integrated Renovate to update Helm dependencies through pull requests, achieving 100% repository scanning coverage and 100% vulnerability scanning coverage across third-party Helm charts.
+- Mentored an engineer through implementing organization-wide single sign-on between GitHub and Microsoft Entra ID, enabling secure, centralized access for the organization.
+- Centralized GitHub Actions workflows in a shared repository, adding automated tests and code quality checks and enabling GitHub Advanced Security scanning across 99% of organization repositories.
+- Provided requested infrastructure evidence for the 2022, 2023, and 2024 SOC 2 and HIPAA audits, helping complete all audit evidence requirements.
+</details>
+
+<details className="project-details">
+  <summary>Developer Experience & Engineering Metrics</summary>
+
+- Developed a centralized Engineering Metrics Exporter API using Python, FastAPI, and the Prometheus client library. It aggregates metrics on security posture, developer productivity, platform adoption, and infrastructure health from GitHub Advanced Security, Backstage, and Trivy, and integrates with Datadog to give engineering leadership visibility into team performance and operational metrics.
+</details>
+
+<details className="project-details">
+  <summary>AI Product Delivery</summary>
+
+- Delivered a hackathon-recognized AI Assistant from proof of concept to production for approximately 30 customers, leading its cross-functional technical vision and implementation with Azure OpenAI and Copilot Studio.
+</details>
+
+<details className="project-details">
+  <summary>Technical Leadership & Mentorship</summary>
+
+- Mentored three direct-report engineers through technical book clubs and pair programming, strengthening their ability to apply best practices in automation, security, and scalability.
+</details>
+
+<details className="project-details">
+  <summary>Production Operations & Incident Response</summary>
+
+- Participated in a weekly on-call rotation, triaging and resolving P1-P5 incidents with typical resolution times of 1-2 hours. Created postmortems to document findings and tracked follow-up actions through closure.
+</details>
 
 #### LexisNexis
 
