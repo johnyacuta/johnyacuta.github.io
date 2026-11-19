@@ -1,31 +1,71 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
 import AboutMeContent, { title } from './index.mdx';
 
+const getSidebarLinkClass = ({ isActive }) =>
+  `about-sidebar-link${isActive ? ' active' : ''}`;
+
 function AboutMe() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <Container>
       <Row className="about-layout">
         <Col xs={12} md={3}>
-          <nav className="about-sidebar" aria-label="About Me sections">
-            <NavLink end to="/about-me" className={({ isActive }) => `about-sidebar-link${isActive ? ' active' : ''}`}>
-              About
-            </NavLink>
-            <NavLink to="/about-me/technology" className={({ isActive }) => `about-sidebar-link${isActive ? ' active' : ''}`}>
-              Technology
-            </NavLink>
-            <NavLink to="/about-me/homebrewing" className={({ isActive }) => `about-sidebar-link${isActive ? ' active' : ''}`}>
-              Homebrewing
-            </NavLink>
-            <NavLink to="/about-me/travel" className={({ isActive }) => `about-sidebar-link${isActive ? ' active' : ''}`}>
-              Travel
-            </NavLink>
-            <NavLink to="/about-me/blog" className={({ isActive }) => `about-sidebar-link${isActive ? ' active' : ''}`}>
-              Blog
-            </NavLink>
-          </nav>
+          <div className="about-sidebar-container">
+            <button
+              type="button"
+              className="about-sidebar-toggle"
+              aria-expanded={isSidebarOpen}
+              aria-controls="about-me-sidebar"
+              onClick={() => setIsSidebarOpen((isOpen) => !isOpen)}
+            >
+              <span className="about-sidebar-toggle-icon" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
+              <span>About Me sections</span>
+            </button>
+            <nav
+              id="about-me-sidebar"
+              className={`about-sidebar${isSidebarOpen ? ' is-open' : ''}`}
+              aria-label="About Me sections"
+            >
+              <NavLink
+                end
+                to="/about-me"
+                onClick={() => setIsSidebarOpen(false)}
+                className={getSidebarLinkClass}
+              >
+                About
+              </NavLink>
+              <NavLink
+                to="/about-me/technology"
+                onClick={() => setIsSidebarOpen(false)}
+                className={getSidebarLinkClass}
+              >
+                Technology
+              </NavLink>
+              <NavLink
+                to="/about-me/homebrewing"
+                onClick={() => setIsSidebarOpen(false)}
+                className={getSidebarLinkClass}
+              >
+                Homebrewing
+              </NavLink>
+              <NavLink
+                to="/about-me/travel"
+                onClick={() => setIsSidebarOpen(false)}
+                className={getSidebarLinkClass}
+              >
+                Travel
+              </NavLink>
+            </nav>
+          </div>
         </Col>
         <Col xs={12} md={9}>
           <Outlet />

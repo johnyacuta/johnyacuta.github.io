@@ -27,7 +27,6 @@ function App() {
               <Route path="technology" element={<AboutSection title="Technology"/>}/>
               <Route path="homebrewing" element={<AboutSection title="Homebrewing"/>}/>
               <Route path="travel" element={<AboutSection title="Travel"/>}/>
-              <Route path="blog" element={<AboutSection title="Blog"/>}/>
             </Route>
           </Routes>
         </main>
