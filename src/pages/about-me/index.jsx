@@ -6,6 +6,8 @@ import { NavLink, Outlet } from 'react-router-dom';
 import AboutMeContent, { title } from './index.mdx';
 import HomebrewingContent, { title as homebrewingTitle } from './homebrewing.mdx';
 import TechnologyContent, { title as technologyTitle } from './technology.mdx';
+import '../page.css';
+import './about-me.css';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;

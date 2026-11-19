@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import ProjectsContent, { title } from './index.mdx';
+import '../page.css';
+import './projects.css';
 
 function Projects() {
   return (

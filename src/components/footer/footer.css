@@ -1,0 +1,8 @@
+.footer {
+  flex-shrink: 0;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.footer p {
+  margin: 0;
+}
