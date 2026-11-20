@@ -11,11 +11,17 @@ function TravelCard({ destination, image, visited, description, recommendations 
         </p>
         <p>{description}</p>
         <div className="travel-card-recommendations">
-          {recommendations.map(({ category, name, url, description: details }) => (
+          {recommendations.map(({ category, items }) => (
             <section className="travel-card-recommendation" key={category}>
               <h3>{category}</h3>
-              <a href={url}>{name}</a>
-              {details && <p>{details}</p>}
+              <ul>
+                {items.map(({ name, url, description: details }) => (
+                  <li key={name}>
+                    <a href={url}>{name}</a>
+                    {details && <p>{details}</p>}
+                  </li>
+                ))}
+              </ul>
             </section>
           ))}
         </div>

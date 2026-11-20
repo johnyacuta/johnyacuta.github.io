@@ -12,16 +12,50 @@ export const travelDestinations = [
       "Prague was probably my favorite city I've visited so far. I loved the medieval Gothic architecture; seeing it in person was breathtaking.",
     recommendations: [
       {
-        category: 'Place to visit',
-        name: 'Prague Castle',
-        url: 'https://www.hrad.cz/en/prague-castle-for-visitors',
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Prague Castle',
+            url: 'https://www.hrad.cz/en/prague-castle-for-visitors',
+          },
+          {
+            name: 'Prague Astronomical Clock',
+            url: 'https://prague.eu/cs/objevujte/staromestska-radnice-s-orlojem'
+          },
+          {
+            name: 'Charles Bridge',
+            url: 'https://prague.eu/cs/objevujte/karluv-most/'
+          },
+          {
+            name: 'Museum of Communism',
+            url: 'https://muzeumkomunismu.cz/en/'
+          },
+          {
+            name: 'Strahov Monastery',
+            url: 'https://www.strahovskyklaster.cz/'
+          }
+        ],
       },
       {
-        category: 'Favorite restaurant',
-        name: 'Caravana cafebar',
-        url: 'https://maps.app.goo.gl/gTLooy8NqC6M3Bg67',
-        description:
-          'This place was a hole-in-the-wall stop with the best view of Prague. We came back twice, and my wife and I had some drinks and snacks while taking in Prague at night and the quiet surroundings.',
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Caravana cafebar',
+            url: 'https://maps.app.goo.gl/gTLooy8NqC6M3Bg67'
+          },
+          {
+            name: 'Vikárka Restaurant',
+            url: 'https://vikarkarestaurant.cz/'
+          },
+          {
+            name: 'Strahov Monastery',
+            url: 'https://www.strahovskyklaster.cz/'
+          },
+          {
+            name: 'Kolkovna Celnice',
+            url: 'https://celnice.kolkovna.cz/?utm_source=gmb&utm_medium=search'
+          }
+        ],
       },
     ],
   },
@@ -32,15 +66,50 @@ export const travelDestinations = [
     description: 'Munich just had the best Bavarian beer ever in the world full stop. The Marienplatz in Munich was our favorite spot to visit and we also saw family while we were there!',
     recommendations: [
       {
-        category: 'Place to visit',
-        name: 'Munich Residence',
-        url: 'https://www.residenz-muenchen.de/'
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Munich Residence',
+            url: 'https://www.residenz-muenchen.de/',
+          },
+          {
+            name: 'Marienplatz',
+            url: 'https://www.muenchen.de/sehenswuerdigkeiten/top-sehenswuerdigkeiten/marienplatz'
+          },
+          {
+            name: 'Frauenkirche',
+            url: 'https://www.muenchner-dom.de/'
+          },
+          {
+            name: 'Asam Church',
+            url: 'https://www.munich.travel/en/pois/urban-districts/asamkirche'
+          },
+          {
+            name: 'Surfing rapids',
+            url: 'https://maps.app.goo.gl/UoNjmMUmAPwbQrmcA'
+          }
+        ],
       },
       {
-        category: 'Favorite restaurant',
-        name: 'Hofbräuhaus München',
-        url: 'https://www.hofbraeuhaus.de/',
-        description: 'The best beer in Munich was served here. I ordered a liter of house beer and a pork knuckle. A must go and please make sure to make reservations ahead of time! You will thank me later.'
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Hofbräuhaus München',
+            url: 'https://www.hofbraeuhaus.de/'
+          },
+          {
+            name: 'Best Döner & Falafel',
+            url: 'https://maps.app.goo.gl/paeVAx7DgvRTGb3S7'
+          },
+          {
+            name: 'Servus Heidi',
+            url: 'https://servus-heidi.com/'
+          },
+          {
+            name: 'Der Spöckmeier - Wirtshaus am Marienplatz',
+            url: 'https://der-spoeckmeier.de/'
+          }
+        ],
       }
     ]
   },
@@ -51,15 +120,182 @@ export const travelDestinations = [
     description: 'Vienna was full of beautiful palaces and gardens both of which we visited and dined in everday while we were there.',
     recommendations: [
       {
-        category: 'Place to visit',
-        name: 'Schönbrunn Palace',
-        url: 'https://www.schoenbrunn.at/en/',
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Schönbrunn Palace',
+            url: 'https://www.schoenbrunn.at/en/',
+          },
+          {
+            name: 'Belvedere Palace',
+            url: 'https://www.belvedere.at/'
+          },
+          {
+            name: 'Hofburg',
+            url: 'https://www.wien.info/de/kunst-kultur/imperiales/hofburg-wien'
+          },
+          {
+            name: 'Weltmuseum Wien',
+            url: 'https://www.weltmuseumwien.at/'
+          },
+          {
+            name: 'Vienna City Hall',
+            url: 'https://www.wien.gv.at/rathaus/'
+          }
+        ],
       },
       {
-        category: 'Favorite restaurant',
-        name: 'Stöckl im Park',
-        url: 'https://www.stoecklimpark.at/en/',
-        description: 'This restaurant is great for relaxing and having a meal and/or drink. Its right next to a park and the nearby parks sometimes have music festivals like a classical music festival was playing when we were there so a free concert!'
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Stöckl im Park',
+            url: 'https://www.stoecklimpark.at/en/'
+          },
+          {
+            name: 'lima56',
+            url: 'https://lima-56.at/'
+          },
+          {
+            name: 'ANKER',
+            url: 'https://www.ankerbrot.at/filialen#FILIALE31'
+          },
+          {
+            name: 'Café Eiles',
+            url: 'https://www.cafe-eiles.at/home'
+          },
+          {
+            name: 'Gelato Carlo Josefstadt',
+            url: 'https://gelatocarlo.com/'
+          }
+        ],
+      }
+    ]
+  },
+  {
+    destination: 'Paris, France',
+    image: '/pages/about-me/travel/paris.jpg',
+    visited: 'February - March 2025',
+    description: 'Paris had one of my favorite architectures throughout Europe - Parisian. The city was big and charming with so much to do and explore. The city took my breath away around every corner.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Palace of Versailles',
+            url: 'https://www.chateauversailles.fr/'
+          },
+          {
+            name: 'Notre-Dame Cathedral of Paris',
+            url: 'https://www.notredamedeparis.fr/'
+          },
+          {
+            name: "Musée d'Orsay",
+            url: 'https://www.musee-orsay.fr/fr'
+          },
+          {
+            name: 'Louvre Museum',
+            url: 'https://www.louvre.fr/'
+          },
+          {
+            name: 'Basilique du Sacré-Cœur de Montmartre',
+            url: 'https://www.sacre-coeur-montmartre.com/'
+          },
+          {
+            name: 'Arc de Triomphe',
+            url: 'https://www.paris-arc-de-triomphe.fr/'
+          },
+          {
+            name: 'Eiffel Tower',
+            url: 'https://www.toureiffel.paris/fr'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Les Deux Colombes',
+            url: 'https://lesdeuxcolombes.fr/'
+          },
+          {
+            name: 'Le Train Bleu',
+            url: 'https://www.le-train-bleu.com/fr/'
+          },
+          {
+            name: 'Best Istanbul Grill',
+            url: 'https://www.best-istanbul-grill.fr/'
+          },
+          {
+            name: 'Express de Lyon',
+            url: 'https://maps.app.goo.gl/Ltgoh9R5PwERjvDr8'
+          },
+          {
+            name: 'Eric Kayser',
+            url: 'https://maison-kayser.com/'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    destination: 'Madrid, Spain',
+    image: '/pages/about-me/travel/madrid.jpg',
+    visited: 'February - March 2025',
+    description: 'Madrid was so lively and sprited at day and especially at night. The city was filled with museums and sites to see especially the surrounding areas like Toledo and Segovia.',
+    recommendations:[
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Museo Nacional del Prado',
+            url: 'https://www.museodelprado.es/'
+          },
+          {
+            name: 'Puerta de Alcalá',
+            url: 'https://www.esmadrid.com/informacion-turistica/puerta-de-alcala'
+          },
+          {
+            name: 'Plaza Mayor',
+            url: 'https://maps.app.goo.gl/1pvCQ6qLvRr7NdAHA'
+          },
+          {
+            name: 'Tablao Flamenco TORERO · Essential Flamenco',
+            url: 'https://essentialflamenco.com/'
+          },
+          {
+            name: 'Royal Palace of Madrid',
+            url: 'https://www.patrimonionacional.es/visita/palacio-real-de-madrid'
+          },
+          {
+            name: 'Galería de las Colecciones Reales',
+            url: 'https://www.galeriadelascoleccionesreales.es/'
+          },
+          {
+            name: 'Naval Museum',
+            url: 'https://armada.defensa.gob.es/ArmadaPortal/page/Portal/ArmadaEspannola/cienciaorgano/prefLang-es/01cienciamuseo'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'El Sur de Moratín',
+            url: 'https://tabernaselsur.com/taberna-el-sur-de-moratin/'
+          },
+          {
+            name: 'Gran Café Cafetería Pasteleria',
+            url: 'https://maps.app.goo.gl/W6ZCc3qB52Wv3oT59'
+          },
+          {
+            name: 'Kiosko Galapagos',
+            url: 'https://maps.app.goo.gl/SDDWcTRjKVAUhMeeA'
+          },
+          {
+            name: 'Taberna La Fragua de Vulcano',
+            url: 'https://lafraguadevulcanomadrid.eatbu.com/?lang=en'
+          }
+        ]
       }
     ]
   }

@@ -3,6 +3,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/home';
 import Projects from '../pages/projects';
+import TravelCard from '../components/cards/travel-card';
 import AboutMe, {
   AboutContent,
   HomebrewingPage,
@@ -121,5 +122,37 @@ describe('site pages', () => {
       'href',
       'https://maps.app.goo.gl/gTLooy8NqC6M3Bg67'
     );
+  });
+
+  it('renders multiple places and restaurants in a travel card', () => {
+    render(
+      <TravelCard
+        destination="Sample destination"
+        image="/sample.jpg"
+        visited="May 2026"
+        description="A sample trip."
+        recommendations={[
+          {
+            category: 'Places to visit',
+            items: [
+              { name: 'Museum', url: '/museum' },
+              { name: 'Park', url: '/park' },
+            ],
+          },
+          {
+            category: 'Favorite restaurants',
+            items: [
+              { name: 'Cafe', url: '/cafe' },
+              { name: 'Bistro', url: '/bistro' },
+            ],
+          },
+        ]}
+      />
+    );
+
+    expect(screen.getByRole('link', { name: 'Museum' })).toHaveAttribute('href', '/museum');
+    expect(screen.getByRole('link', { name: 'Park' })).toHaveAttribute('href', '/park');
+    expect(screen.getByRole('link', { name: 'Cafe' })).toHaveAttribute('href', '/cafe');
+    expect(screen.getByRole('link', { name: 'Bistro' })).toHaveAttribute('href', '/bistro');
   });
 });
