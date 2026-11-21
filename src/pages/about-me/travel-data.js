@@ -1,0 +1,539 @@
+export const travelDestinations = [
+  {
+    destination: 'Prague, Czech Republic',
+    image: '/pages/about-me/travel/prague.jpg',
+    visited: 'August - September 2026',
+    description:
+      "Prague was probably my favorite city I've visited so far. I loved the medieval Gothic architecture; seeing it in person was breathtaking.",
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Prague Castle',
+            url: 'https://www.hrad.cz/en/prague-castle-for-visitors',
+          },
+          {
+            name: 'Prague Astronomical Clock',
+            url: 'https://prague.eu/cs/objevujte/staromestska-radnice-s-orlojem'
+          },
+          {
+            name: 'Charles Bridge',
+            url: 'https://prague.eu/cs/objevujte/karluv-most/'
+          },
+          {
+            name: 'Museum of Communism',
+            url: 'https://muzeumkomunismu.cz/en/'
+          },
+          {
+            name: 'Strahov Monastery',
+            url: 'https://www.strahovskyklaster.cz/'
+          }
+        ],
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Caravana cafebar',
+            url: 'https://maps.app.goo.gl/gTLooy8NqC6M3Bg67'
+          },
+          {
+            name: 'Vikárka Restaurant',
+            url: 'https://vikarkarestaurant.cz/'
+          },
+          {
+            name: 'Strahov Monastery',
+            url: 'https://www.strahovskyklaster.cz/'
+          },
+          {
+            name: 'Kolkovna Celnice',
+            url: 'https://celnice.kolkovna.cz/?utm_source=gmb&utm_medium=search'
+          }
+        ],
+      },
+    ],
+  },
+  {
+    destination: 'Munich, Germany',
+    image: '/pages/about-me/travel/munich.jpg',
+    visited: 'August - September 2026',
+    description: 'Munich just had the best Bavarian beer ever in the world full stop. The Marienplatz in Munich was our favorite spot to visit and we also saw family while we were there!',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Munich Residence',
+            url: 'https://www.residenz-muenchen.de/',
+          },
+          {
+            name: 'Marienplatz',
+            url: 'https://www.muenchen.de/sehenswuerdigkeiten/top-sehenswuerdigkeiten/marienplatz'
+          },
+          {
+            name: 'Frauenkirche',
+            url: 'https://www.muenchner-dom.de/'
+          },
+          {
+            name: 'Asam Church',
+            url: 'https://www.munich.travel/en/pois/urban-districts/asamkirche'
+          },
+          {
+            name: 'Surfing rapids',
+            url: 'https://maps.app.goo.gl/UoNjmMUmAPwbQrmcA'
+          }
+        ],
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Hofbräuhaus München',
+            url: 'https://www.hofbraeuhaus.de/'
+          },
+          {
+            name: 'Best Döner & Falafel',
+            url: 'https://maps.app.goo.gl/paeVAx7DgvRTGb3S7'
+          },
+          {
+            name: 'Servus Heidi',
+            url: 'https://servus-heidi.com/'
+          },
+          {
+            name: 'Der Spöckmeier - Wirtshaus am Marienplatz',
+            url: 'https://der-spoeckmeier.de/'
+          }
+        ],
+      }
+    ]
+  },
+  {
+    destination: 'Vienna, Austria',
+    image: '/pages/about-me/travel/vienna.jpg',
+    visited: 'August - September 2026',
+    description: 'Vienna was full of beautiful palaces and gardens both of which we visited and dined in everday while we were there.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Schönbrunn Palace',
+            url: 'https://www.schoenbrunn.at/en/',
+          },
+          {
+            name: 'Belvedere Palace',
+            url: 'https://www.belvedere.at/'
+          },
+          {
+            name: 'Hofburg',
+            url: 'https://www.wien.info/de/kunst-kultur/imperiales/hofburg-wien'
+          },
+          {
+            name: 'Weltmuseum Wien',
+            url: 'https://www.weltmuseumwien.at/'
+          },
+          {
+            name: 'Vienna City Hall',
+            url: 'https://www.wien.gv.at/rathaus/'
+          }
+        ],
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Stöckl im Park',
+            url: 'https://www.stoecklimpark.at/en/'
+          },
+          {
+            name: 'lima56',
+            url: 'https://lima-56.at/'
+          },
+          {
+            name: 'ANKER',
+            url: 'https://www.ankerbrot.at/filialen#FILIALE31'
+          },
+          {
+            name: 'Café Eiles',
+            url: 'https://www.cafe-eiles.at/home'
+          },
+          {
+            name: 'Gelato Carlo Josefstadt',
+            url: 'https://gelatocarlo.com/'
+          }
+        ],
+      }
+    ]
+  },
+  {
+    destination: 'Paris, France',
+    image: '/pages/about-me/travel/paris.jpg',
+    visited: 'February - March 2025',
+    description: 'Paris had one of my favorite architectures throughout Europe - Parisian. The city was big and charming with so much to do and explore. The city took my breath away around every corner.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Palace of Versailles',
+            url: 'https://www.chateauversailles.fr/'
+          },
+          {
+            name: 'Notre-Dame Cathedral of Paris',
+            url: 'https://www.notredamedeparis.fr/'
+          },
+          {
+            name: "Musée d'Orsay",
+            url: 'https://www.musee-orsay.fr/fr'
+          },
+          {
+            name: 'Louvre Museum',
+            url: 'https://www.louvre.fr/'
+          },
+          {
+            name: 'Basilique du Sacré-Cœur de Montmartre',
+            url: 'https://www.sacre-coeur-montmartre.com/'
+          },
+          {
+            name: 'Arc de Triomphe',
+            url: 'https://www.paris-arc-de-triomphe.fr/'
+          },
+          {
+            name: 'Eiffel Tower',
+            url: 'https://www.toureiffel.paris/fr'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Les Deux Colombes',
+            url: 'https://lesdeuxcolombes.fr/'
+          },
+          {
+            name: 'Le Train Bleu',
+            url: 'https://www.le-train-bleu.com/fr/'
+          },
+          {
+            name: 'Best Istanbul Grill',
+            url: 'https://www.best-istanbul-grill.fr/'
+          },
+          {
+            name: 'Express de Lyon',
+            url: 'https://maps.app.goo.gl/Ltgoh9R5PwERjvDr8'
+          },
+          {
+            name: 'Eric Kayser',
+            url: 'https://maison-kayser.com/'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    destination: 'Madrid, Spain',
+    image: '/pages/about-me/travel/madrid.jpg',
+    visited: 'February - March 2025',
+    description: 'Madrid was so lively and sprited at day and especially at night. The city was filled with museums and sites to see especially the surrounding areas like Toledo and Segovia.',
+    recommendations:[
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Museo Nacional del Prado',
+            url: 'https://www.museodelprado.es/'
+          },
+          {
+            name: 'Puerta de Alcalá',
+            url: 'https://www.esmadrid.com/informacion-turistica/puerta-de-alcala'
+          },
+          {
+            name: 'Plaza Mayor',
+            url: 'https://maps.app.goo.gl/1pvCQ6qLvRr7NdAHA'
+          },
+          {
+            name: 'Tablao Flamenco TORERO · Essential Flamenco',
+            url: 'https://essentialflamenco.com/'
+          },
+          {
+            name: 'Royal Palace of Madrid',
+            url: 'https://www.patrimonionacional.es/visita/palacio-real-de-madrid'
+          },
+          {
+            name: 'Galería de las Colecciones Reales',
+            url: 'https://www.galeriadelascoleccionesreales.es/'
+          },
+          {
+            name: 'Naval Museum',
+            url: 'https://armada.defensa.gob.es/ArmadaPortal/page/Portal/ArmadaEspannola/cienciaorgano/prefLang-es/01cienciamuseo'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'El Sur de Moratín',
+            url: 'https://tabernaselsur.com/taberna-el-sur-de-moratin/'
+          },
+          {
+            name: 'Gran Café Cafetería Pasteleria',
+            url: 'https://maps.app.goo.gl/W6ZCc3qB52Wv3oT59'
+          },
+          {
+            name: 'Kiosko Galapagos',
+            url: 'https://maps.app.goo.gl/SDDWcTRjKVAUhMeeA'
+          },
+          {
+            name: 'Maison Kayser Retiro | Pastelería Madrid',
+            url: 'https://maps.app.goo.gl/rN3HvzXnExsWJmLu9'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    destination: 'Segovia, Spain',
+    image: '/pages/about-me/travel/segovia.jpg',
+    visited: 'February - March 2025',
+    description: 'Segovia was such an awesome town because it has the castle where Christopher Columbus sought funding and got approved for. Also, it has the worlds best looking and functioning Roman aquaduct.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Segovia Aqueduct',
+            url: 'https://maps.app.goo.gl/2DLY9aWVaU27W8HTA'
+          },
+          {
+            name: 'Alcázar de Segovia',
+            url: 'https://www.alcazardesegovia.com/'
+          },
+          {
+            name: 'Casa De Los Picos',
+            url: 'https://maps.app.goo.gl/HPqU2GjKuajNc9dN6'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Restaurante Mesón de Cándido',
+            url: 'https://mesondecandido.es/'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    destination: 'Toledo, Spain',
+    image: '/pages/about-me/travel/toledo.jpg',
+    visited: 'February - March 2025',
+    description: 'Toledo was a picturesque Spanish city that was very much like a fairytale. Just quaint. The entire city is a UNESCO World Heritage Site.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Mirador del Valle - Toledo',
+            url: 'https://maps.app.goo.gl/Jdz9QE4JcbK7Bf4u8'
+          },
+          {
+            name: 'Toledo Cathedral',
+            url: 'https://www.catedralprimada.es/'
+          },
+          {
+            name: 'Alcázar de Toledo',
+            url: 'https://maps.app.goo.gl/4fjtt4frtA85Q27u9'
+          },
+          {
+            name: 'Damasquinados A.J.L. García González',
+            url: 'https://share.google/gESaMLIKlzeljrOQS'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'El Trébol',
+            url: 'https://maps.app.goo.gl/dWA2cGGt6NDCrFqC7'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    destination: 'London, United Kingdom',
+    image: '/pages/about-me/travel/london.jpg',
+    visited: 'July 2024',
+    description: 'London has a special place in my list of favorites because of its pub culture. There is nowhere else on Earth that has the pub culture that London provides.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Tower of London',
+            url: 'https://www.hrp.org.uk/tower-of-london/'
+          },
+          {
+            name: 'Tower Bridge',
+            url: 'https://maps.app.goo.gl/qu7nfvFgzmPVURGt6'
+          },
+          {
+            name: 'Big Ben',
+            url: 'https://www.parliament.uk/bigben/'
+          },
+          {
+            name: 'The British Museum',
+            url: 'https://www.britishmuseum.org/'
+          },
+          {
+            name: 'Buckingham Palace',
+            url: 'https://www.rct.uk/visit/buckingham-palace'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'The Grange',
+            url: 'https://www.grangeealing.co.uk/'
+          },
+          {
+            name: 'The Walrus And The Carpenter',
+            url: 'https://www.nicholsonspubs.co.uk/restaurants/london/thewalrusandthecarpentermonumentlondon#/'
+          },
+          {
+            name: 'The Salisbury Pub',
+            url: 'https://www.greeneking.co.uk/pubs/greater-london/salisbury'
+          },
+          {
+            name: 'Booking Office 1869',
+            url: 'https://www.booking-office.co.uk/'
+          },
+          {
+            name: 'Cafe Tiffin',
+            url: 'https://cafetiffin.com/'
+          },
+          {
+            name: "Afternoon Tea at The Ritz",
+            url: 'https://www.theritzlondon.com/dine-with-us/afternoon-tea/'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    destination: 'Brussels, Belgium',
+    image: '/pages/about-me/travel/brussels.jpg',
+    visited: 'July 2024',
+    description: 'Brussels had the most beautiful plaza I have ever seen with surrounding buildings containing actual gold in smoe of the paint. It is a showstopper for sure.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Grand Place',
+            url: 'https://maps.app.goo.gl/qAEMcuLsM5xEavji6'
+          },
+          {
+            name: 'St Michael & St Gudula Cathedral',
+            url: 'https://cathedralisbruxellensis.be/'
+          },
+          {
+            name: 'Brussels Royal Palace',
+            url: 'https://www.monarchie.be/nl/patrimonium/koninklijk-paleis-te-brussel'
+          },
+          {
+            name: 'Manneken Pis',
+            url: 'https://maps.app.goo.gl/dKmj6L4X6REqa8rA7'
+          },
+          {
+            name: 'Royal Gallery of Saint Hubert',
+            url: 'https://www.grsh.be/'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Delirium | Brussels',
+            url: 'https://www.deliriumvillage.com/'
+          },
+          {
+            name: 'Meyboom',
+            url: 'https://www.restaurantmeyboom.be/'
+          },
+          {
+            name: 'Au Bon Vieux Temps',
+            url: 'https://maps.app.goo.gl/zRUiSuLewEqkUx5N9'
+          },
+          {
+            name: 'Poechenellekelder',
+            url: 'https://poechenellekelder.be/en'
+          },
+          {
+            name: 'Elisabeth Brussels',
+            url: 'https://elisabeth.be/'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    destination: 'Cologne, Germany',
+    image: '/pages/about-me/travel/cologne.jpg',
+    visited: 'July 2024',
+    description: 'Cologne was amazing in outdoor beer and food activities. The art museum was also awesome to check out. It had a beautiful atmosphere where homes embraced living in front of the river.',
+    recommendations: [
+      {
+        category: 'Places to visit',
+        items: [
+          {
+            name: 'Cologne Cathedral',
+            url: 'https://www.koelner-dom.de/'
+          },
+          {
+            name: 'Hohenzollern Bridge',
+            url: 'https://maps.app.goo.gl/YKaqc9wqkRKwSV7h6'
+          },
+          {
+            name: 'Great St. Martin Church',
+            url: 'https://online.jerusalemgemeinschaften.de/'
+          },
+          {
+            name: 'Wallraf-Richartz-Museum & Fondation Corboud',
+            url: 'https://www.wallraf.museum/'
+          },
+          {
+            name: 'Old Market',
+            url: 'https://maps.app.goo.gl/MqNSm9WRgPdtacs16'
+          }
+        ]
+      },
+      {
+        category: 'Favorite eats',
+        items: [
+          {
+            name: 'Augustiner am Heumarkt',
+            url: 'https://www.augustiner-am-heumarkt.de/'
+          },
+          {
+            name: 'Gilden im Zims “Heimat kölscher Helden”',
+            url: 'https://maps.app.goo.gl/Rd2m7kW9fxnWXYYQ8'
+          },
+          {
+            name: 'Ice cream shop Gelateria Luissimo',
+            url: 'https://maps.app.goo.gl/LYP5UEwJcjjmj2yt5'
+          }
+        ]
+      }
+    ]
+  }
+];

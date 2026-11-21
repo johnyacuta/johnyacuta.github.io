@@ -19,11 +19,8 @@ import TechnologyHighlightCard from '../../components/cards/technology-highlight
 import TravelCard from '../../components/cards/travel-card';
 import '../page.css';
 import './about-me.css';
-import {
-  intro as travelIntro,
-  title as travelTitle,
-  travelDestinations,
-} from './travel.mdx';
+import TravelContent, { title as travelTitle } from './travel.mdx';
+import { travelDestinations } from './travel-data.js';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
@@ -162,7 +159,7 @@ export function TravelPage() {
     <>
       <h1 className="page-heading">{travelTitle}</h1>
       <div className="about-page-content">
-        <p>{travelIntro}</p>
+        <TravelContent />
         <div className="travel-card-grid">
           {travelDestinations.map((destination) => (
             <TravelCard key={destination.destination} {...destination} />
