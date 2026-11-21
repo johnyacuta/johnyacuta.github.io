@@ -48,6 +48,10 @@ describe('site pages', () => {
     expect(screen.getByText('Personal Projects')).toBeInTheDocument();
     expect(screen.getByText('Work Projects')).toBeInTheDocument();
     expect(screen.getByText('Zip Co')).toBeInTheDocument();
+    expect(screen.getByText('Base64 Converter')).toBeInTheDocument();
+    expect(
+      screen.getByText('AI Enablement & Platform Delivery')
+    ).toBeInTheDocument();
   });
 
   it('renders the About page and its section navigation', () => {
