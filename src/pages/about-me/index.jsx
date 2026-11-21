@@ -6,18 +6,18 @@ import { NavLink, Outlet } from 'react-router-dom';
 import BeerCard from '../../components/cards/beer-card';
 import AboutMeContent, { title } from './index.mdx';
 import HomebrewingContent, { title as homebrewingTitle } from './homebrewing.mdx';
-import { beers } from './homebrewing-data.js';
+import { beers } from './homebrewing.js';
 import TechnologyContent, {
   intro as technologyIntro,
   title as technologyTitle
 } from './technology.mdx';
-import { technologyGroups } from './technology-data.js';
+import { technologyGroups } from './technology.js';
 import TechnologyHighlightCard from '../../components/cards/technology-highlight-card';
 import TravelCard from '../../components/cards/travel-card';
 import '../page.css';
 import './about-me.css';
 import TravelContent, { title as travelTitle } from './travel.mdx';
-import { travelDestinations } from './travel-data.js';
+import { travelDestinations } from './travel.js';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
