@@ -5,10 +5,8 @@ import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
 import BeerCard from '../../components/cards/beer-card';
 import AboutMeContent, { title } from './index.mdx';
-import HomebrewingContent, {
-  beers,
-  title as homebrewingTitle,
-} from './homebrewing.mdx';
+import HomebrewingContent, { title as homebrewingTitle } from './homebrewing.mdx';
+import { beers } from './homebrewing-data.js';
 import TechnologyContent, {
   intro as technologyIntro,
   title as technologyTitle
