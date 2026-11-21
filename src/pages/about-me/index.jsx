@@ -5,25 +5,19 @@ import Col from 'react-bootstrap/Col';
 import { NavLink, Outlet } from 'react-router-dom';
 import BeerCard from '../../components/cards/beer-card';
 import AboutMeContent, { title } from './index.mdx';
-import HomebrewingContent, {
-  beers,
-  title as homebrewingTitle,
-} from './homebrewing.mdx';
+import HomebrewingContent, { title as homebrewingTitle } from './homebrewing.mdx';
+import { beers } from './homebrewing.js';
 import TechnologyContent, {
   intro as technologyIntro,
-  title as technologyTitle,
-  technologyGroupsHeading,
-  technologyGroups,
+  title as technologyTitle
 } from './technology.mdx';
+import { technologyGroups } from './technology.js';
 import TechnologyHighlightCard from '../../components/cards/technology-highlight-card';
 import TravelCard from '../../components/cards/travel-card';
 import '../page.css';
 import './about-me.css';
-import {
-  intro as travelIntro,
-  title as travelTitle,
-  travelDestinations,
-} from './travel.mdx';
+import TravelContent, { title as travelTitle } from './travel.mdx';
+import { travelDestinations } from './travel.js';
 
 const getSidebarLinkClass = ({ isActive }) =>
   `about-sidebar-link${isActive ? ' active' : ''}`;
@@ -139,7 +133,7 @@ export function TechnologyPage() {
           aria-labelledby="technology-highlights-heading"
         >
           <h2 id="technology-highlights-heading">
-            {technologyGroupsHeading}
+            Technologies I work with most
           </h2>
           <div className="technology-highlight-grid">
             {technologyGroups.map(({ name, technologies }) => (
@@ -162,7 +156,7 @@ export function TravelPage() {
     <>
       <h1 className="page-heading">{travelTitle}</h1>
       <div className="about-page-content">
-        <p>{travelIntro}</p>
+        <TravelContent />
         <div className="travel-card-grid">
           {travelDestinations.map((destination) => (
             <TravelCard key={destination.destination} {...destination} />

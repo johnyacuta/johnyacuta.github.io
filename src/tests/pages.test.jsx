@@ -1,9 +1,13 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it } from 'vitest';
+import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/home';
 import Projects from '../pages/projects';
 import TravelCard from '../components/cards/travel-card';
+import { travelDestinations } from '../pages/about-me/travel.js';
+import { personalProjects } from '../pages/projects/personal-projects.js';
+import { workProjects } from '../pages/projects/work-projects.js';
 import AboutMe, {
   AboutContent,
   HomebrewingPage,
@@ -48,6 +52,25 @@ describe('site pages', () => {
     expect(screen.getByText('Personal Projects')).toBeInTheDocument();
     expect(screen.getByText('Work Projects')).toBeInTheDocument();
     expect(screen.getByText('Zip Co')).toBeInTheDocument();
+    expect(screen.getByText('Base64 Converter')).toBeInTheDocument();
+    expect(
+      screen.getByText('AI Enablement & Platform Delivery')
+    ).toBeInTheDocument();
+  });
+
+  it('opens employer and project detail disclosures', async () => {
+    const user = userEvent.setup();
+    render(<Projects />);
+
+    const employerSummary = screen.getByText('Zip Co');
+    const employerDetails = employerSummary.closest('details');
+    await user.click(employerSummary);
+    expect(employerDetails).toHaveAttribute('open');
+
+    const projectSummary = screen.getByText('AI Enablement & Platform Delivery');
+    const projectDetails = projectSummary.closest('details');
+    await user.click(projectSummary);
+    expect(projectDetails).toHaveAttribute('open');
   });
 
   it('renders the About page and its section navigation', () => {
@@ -56,6 +79,20 @@ describe('site pages', () => {
     expect(screen.getByRole('heading', { name: 'About Me' })).toBeInTheDocument();
     expect(screen.getByRole('navigation', { name: 'About Me sections' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Technology' })).toBeInTheDocument();
+  });
+
+  it('navigates to Homebrewing and closes the sidebar', async () => {
+    const user = userEvent.setup();
+    renderAboutRoute('/about-me');
+
+    const toggle = screen.getByRole('button', { name: 'About Me sections' });
+    await user.click(toggle);
+    expect(toggle).toHaveAttribute('aria-expanded', 'true');
+
+    await user.click(screen.getByRole('link', { name: 'Homebrewing' }));
+
+    expect(screen.getByRole('heading', { name: 'Homebrewing' })).toBeInTheDocument();
+    expect(toggle).toHaveAttribute('aria-expanded', 'false');
   });
 
   it('renders the Technology page content', () => {
@@ -154,5 +191,48 @@ describe('site pages', () => {
     expect(screen.getByRole('link', { name: 'Park' })).toHaveAttribute('href', '/park');
     expect(screen.getByRole('link', { name: 'Cafe' })).toHaveAttribute('href', '/cafe');
     expect(screen.getByRole('link', { name: 'Bistro' })).toHaveAttribute('href', '/bistro');
+  });
+
+  it('has complete travel recommendation data', () => {
+    expect(travelDestinations.length).toBeGreaterThan(0);
+
+    travelDestinations.forEach((destination) => {
+      expect(destination.destination).toBeTruthy();
+      expect(destination.image).toBeTruthy();
+      expect(destination.visited).toBeTruthy();
+      expect(destination.recommendations.length).toBeGreaterThan(0);
+
+      destination.recommendations.forEach(({ category, items }) => {
+        expect(category).toBeTruthy();
+        expect(Array.isArray(items)).toBe(true);
+        expect(items.length).toBeGreaterThan(0);
+
+        items.forEach(({ name, url }) => {
+          expect(name).toBeTruthy();
+          expect(url).toMatch(/^https?:\/\//);
+        });
+      });
+    });
+  });
+
+  it('has complete personal and work project data', () => {
+    expect(personalProjects.length).toBeGreaterThan(0);
+    personalProjects.forEach(({ name, description }) => {
+      expect(name).toBeTruthy();
+      expect(description).toBeTruthy();
+    });
+
+    expect(workProjects.length).toBeGreaterThan(0);
+    workProjects.forEach(({ employer, highlights, projects }) => {
+      expect(employer).toBeTruthy();
+      expect(highlights.length).toBeGreaterThan(0);
+      expect(projects.length).toBeGreaterThan(0);
+
+      projects.forEach(({ title, details }) => {
+        expect(title).toBeTruthy();
+        expect(details.length).toBeGreaterThan(0);
+        details.forEach((detail) => expect(detail).toBeTruthy());
+      });
+    });
   });
 });
