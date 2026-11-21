@@ -11,10 +11,9 @@ import HomebrewingContent, {
 } from './homebrewing.mdx';
 import TechnologyContent, {
   intro as technologyIntro,
-  title as technologyTitle,
-  technologyGroupsHeading,
-  technologyGroups,
+  title as technologyTitle
 } from './technology.mdx';
+import { technologyGroups } from './technology-data.js';
 import TechnologyHighlightCard from '../../components/cards/technology-highlight-card';
 import TravelCard from '../../components/cards/travel-card';
 import '../page.css';
@@ -136,7 +135,7 @@ export function TechnologyPage() {
           aria-labelledby="technology-highlights-heading"
         >
           <h2 id="technology-highlights-heading">
-            {technologyGroupsHeading}
+            Technologies I work with most
           </h2>
           <div className="technology-highlight-grid">
             {technologyGroups.map(({ name, technologies }) => (
